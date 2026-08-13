@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>🇰🇷 釜山五日流程總覽</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#ffffff;font-family:'Noto Sans TC',sans-serif;-webkit-font-smoothing:antialiased}
+.hv1:hover{color:#25313d !important}
+.hv2:hover{color:#3d6b8f !important;border-color:#3d6b8f !important}
+.hv3:hover{text-decoration:underline !important}
+</style>
+</head>
+<body>
+<div style="min-height:100vh;background:#fff;color:#25313d" data-screen-label="流程總覽">
+
+  <!-- top nav -->
+  <div style="border-bottom:1px solid #edf1f4;background:#f8fafb;overflow-x:auto">
+    <div style="display:flex;gap:20px;padding:14px 20px;font-size:13px;white-space:nowrap;width:max-content;margin:0 auto">
+      <a href="#schedule" style="color:#25313d;font-weight:700;text-decoration:none">📋 五日總表</a>
+      <a href="#map" style="color:#8a97a4;text-decoration:none" class="hv1">🗺 地圖</a>
+      <a href="#flights" style="color:#8a97a4;text-decoration:none" class="hv1">✈ 航班</a>
+      <a href="#tips" style="color:#8a97a4;text-decoration:none" class="hv1">💡 備忘</a>
+    </div>
+  </div>
+
+  <!-- hero -->
+  <div style="background:#25313d;color:#fff;padding:44px 24px 36px;text-align:center">
+    <div style="font-size:11px;letter-spacing:.26em;color:#9fb2c2;font-weight:500">BUSAN · 5 DAYS · 4 NIGHTS · 2 ADULTS</div>
+    <h1 style="font-size:clamp(26px,5vw,34px);font-weight:900;margin:12px 0 10px;line-height:1.3">🇰🇷 釜山五日流程總覽</h1>
+    <p style="font-size:13.5px;color:#b9c8d5;margin:0 0 4px;line-height:1.9">南浦洞 → 甘川洞 → 松島 → 海雲台 → 青沙浦 → 廣安里 → 西面</p>
+    <p style="font-size:13.5px;color:#b9c8d5;margin:0;line-height:1.9">TPE 直飛 PUS 約 2h20｜釜山 4 晚｜前 2 晚南浦・後 2 晚海雲台</p>
+    <div style="font-size:12px;color:#e8d3a3;margin-top:16px;background:rgba(255,255,255,.07);border-radius:10px;padding:9px 14px;display:inline-block">點任一天可展開當日時間軸；航班・地圖・備忘在最下方</div>
+  </div>
+
+  <div style="max-width:680px;margin:0 auto;padding:24px 20px 64px">
+
+    <!-- quick nav -->
+    <div style="display:flex;gap:8px;flex-wrap:wrap">
+      <a href="#schedule" style="background:#f3f6f8;border:1px solid #e2e8ed;color:#61707f;font-size:12.5px;padding:5px 14px;border-radius:99px;text-decoration:none;white-space:nowrap" class="hv2">📋 總表</a>
+      <a href="#flights" style="background:#f3f6f8;border:1px solid #e2e8ed;color:#61707f;font-size:12.5px;padding:5px 14px;border-radius:99px;text-decoration:none;white-space:nowrap" class="hv2">✈ 航班</a>
+      <a href="#map" style="background:#f3f6f8;border:1px solid #e2e8ed;color:#61707f;font-size:12.5px;padding:5px 14px;border-radius:99px;text-decoration:none;white-space:nowrap" class="hv2">🗺 地圖</a>
+      <a href="#tips" style="background:#f3f6f8;border:1px solid #e2e8ed;color:#61707f;font-size:12.5px;padding:5px 14px;border-radius:99px;text-decoration:none;white-space:nowrap" class="hv2">💡 備忘</a>
+    </div>
+
+    <!-- map -->
+    <div id="map" style="scroll-margin-top:20px;margin-top:8px">
+      <div onclick="tog('map')" style="display:flex;align-items:baseline;gap:12px;margin:0 0 4px;cursor:pointer;user-select:none">
+        <span style="font-size:38px;font-weight:900;color:#e4eaef;line-height:1">🗺</span>
+        <div style="font-size:16px;font-weight:900;color:#25313d">釜山行程地圖<span style="font-weight:500;color:#8a97a4;font-size:12.5px">（市區全覽）</span></div>
+        <span style="margin-left:auto;font-size:12px;color:#8a97a4"><span id="ar-map">▸</span></span>
+      </div>
+      <div style="height:1px;background:#25313d;margin-bottom:4px"></div>
+      <div id="bd-map" style="display:none">
+        <div style="position:relative;width:100%;padding-bottom:56%;height:0;overflow:hidden;border-radius:12px;margin-top:12px">
+          <iframe src="https://maps.google.com/maps?q=Busan%20Station&t=&z=11&ie=UTF8&iwloc=&output=embed" allowfullscreen="allowfullscreen" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0"></iframe>
+        </div>
+        <p style="font-size:12.5px;color:#8a97a4;line-height:1.75;margin:10px 2px 0">主要移動軸：南浦（1 號線）↔ 西面（1/2 號線轉乘站）↔ 海雲台（2 號線）；甘川洞、松島在西側，青沙浦、龍宮寺在東側。⚠ 在韓國 Google Maps 導航不準，請用 <strong style="color:#25313d">Naver Map／Kakao Map</strong>。</p>
+      </div>
+    </div>
+
+    <!-- schedule -->
+    <div id="schedule" style="scroll-margin-top:20px">
+      <div style="display:flex;align-items:baseline;gap:12px;margin:42px 0 4px">
+        <span style="font-size:38px;font-weight:900;color:#e4eaef;line-height:1">5</span>
+        <div style="font-size:16px;font-weight:900;color:#25313d">五日總表</div>
+      </div>
+      <div style="height:1px;background:#25313d;margin-bottom:4px"></div>
+      <div style="margin:14px 2px 2px;font-size:13px"><a href="#" id="togAllBtn" onclick="togAll(event)" style="color:#3d6b8f;text-decoration:none;font-weight:600" class="hv3">▾ 全部展開</a></div>
+
+        <!-- Day 01 -->
+        <div style="border-bottom:1px dashed #dde5eb">
+          <div onclick="tog('01')" style="display:flex;gap:18px;padding:18px 0;cursor:pointer;user-select:none;align-items:flex-start">
+          <div style="width:48px;flex-shrink:0;text-align:center">
+            <div style="font-size:28px;font-weight:900;color:#6b5ca8;line-height:1">01</div>
+            <div style="font-size:11px;color:#8a97a4;margin-top:5px;line-height:1.4">Day 1</div>
+          </div>
+          <div style="flex:1;min-width:0">
+            <div style="font-size:15px;font-weight:700;color:#25313d;line-height:1.45">TPE 出發 → 抵釜山・南浦洞</div>
+            <div style="font-size:13px;color:#3d6b8f;margin-top:4px;line-height:1.65">✈ TPE → PUS（約 2h20）・🚈 機場輕軌＋地鐵進市區</div>
+            <div style="font-size:13px;color:#61707f;margin-top:3px">🏨 <a href="https://www.google.com/maps/search/?api=1&query=Aventree+Hotel+Busan+Nampo" target="_blank" rel="noopener" style="color:#3d6b8f;font-weight:600;text-decoration:none" class="hv3">Aventree Hotel Busan（南浦）</a><span>（第 1 晚）</span></div>
+            <div style="font-size:12px;color:#8a97a4;margin-top:5px;line-height:1.75">早 機場/機上 · 午 豬肉湯飯（西面/南浦） · 晚 BIFF 廣場＋富平罐頭夜市</div>
+          </div>
+            <span id="ar-01" style="color:#c3ccd4;font-size:15px;flex-shrink:0;align-self:center">▸</span>
+          </div>
+          <div id="bd-01" style="display:none;padding:2px 0 20px 66px">
+            <div style="border-top:1px solid #eef1f4;display:flex;gap:14px;padding:8px 0;align-items:flex-start">
+            <div style="flex:0 0 92px;font-weight:700;color:#2b6a8f;font-size:12.5px;white-space:nowrap;font-variant-numeric:tabular-nums">~06:30</div>
+            <div style="flex:1;font-size:13.5px;color:#4a5866;line-height:1.65">桃園機場報到（國際線建議提前約 2.5–3h；選上午班機，抵達後還有大半天）</div>
+          </div>
+            <div style="border-top:1px solid #eef1f4;display:flex;gap:14px;padding:8px 0;align-items:flex-start">
+            <div style="flex:0 0 92px;font-weight:700;color:#2b6a8f;font-size:12.5px;white-space:nowrap;font-variant-numeric:tabular-nums">~09:00</div>
+            <div style="flex:1;font-size:13.5px;color:#4a5866;line-height:1.65">TPE → PUS（金海機場，約 2h20；韓國比台灣快 1 小時）</div>
+          </div>
+            <div style="border-top:1px solid #eef1f4;display:flex;gap:14px;padding:8px 0;align-items:flex-start">
+            <div style="flex:0 0 92px;font-weight:700;color:#2b6a8f;font-size:12.5px;white-space:nowrap;font-variant-numeric:tabular-nums">~12:30</div>
+            <div style="flex:1;font-size:13.5px;color:#4a5866;line-height:1.65">入境、領行李；機場 1F 便利商店買 <strong style="color:#25313d">T-money／Cashbee 交通卡</strong>並加值（全程地鐵公車都靠它）</div>
+          </div>
+            <div style="border-top:1px solid #eef1f4;display:flex;gap:14px;padding:8px 0;align-items:flex-start">
+            <div style="flex:0 0 92px;font-weight:700;color:#2b6a8f;font-size:12.5px;white-space:nowrap;font-variant-numeric:tabular-nums">~13:00</div>
+            <div style="flex:1;font-size:13.5px;color:#4a5866;line-height:1.65"><strong style="color:#25313d">機場輕軌 BGL</strong> → 沙上站轉 2 號線 → 西面轉 1 號線 → <strong style="color:#25313d">南浦站</strong>（全程約 1h）；行李多可改機場巴士或計程車（約 40 分）</div>
+          </div>
+            <div style="border-top:1px solid #eef1f4;display:flex;gap:14px;padding:8px 0;align-items:flex-start">
+            <div style="flex:0 0 92px;font-weight:700;color:#2b6a8f;font-size:12.5px;white-space:nowrap;font-variant-numeric:tabular-nums">~14:00</div>
+            <div style="flex:1;font-size:13.5px;color:#4a5866;line-height:1.65">飯店寄放行李（15:00 開放入住）；午餐 <strong style="color:#25313d">豬肉湯飯</strong>（남포동 일대）或札嘎其小吃</div>
+          </div>
+            <div style="border-top:1px solid #eef1f4;display:flex;gap:14px;padding:8px 0;align-items:flex-start">
+            <div style="flex:0 0 92px;font-weight:700;color:#2b6a8f;font-size:12.5px;white-space:nowrap;font-variant-numeric:tabular-nums">~15:30</div>
+            <div style="flex:1;font-size:13.5px;color:#4a5866;line-height:1.65"><strong style="color:#25313d">龍頭山公園＋釜山塔</strong>（搭手扶梯上山）→ 光復路時裝街散步</div>
+          </div>
+            <div style="border-top:1px solid #eef1f4;display:flex;gap:14px;padding:8px 0;align-items:flex-start">
+            <div style="flex:0 0 92px;font-weight:700;color:#2b6a8f;font-size:12.5px;white-space:nowrap;font-variant-numeric:tabular-nums">~17:30</div>
+            <div style="flex:1;font-size:13.5px;color:#4a5866;line-height:1.65"><strong style="color:#25313d">BIFF 廣場</strong>：黑糖餅（씨앗호떡）、街頭小吃；<strong style="color:#25313d">國際市場</strong>逛雜貨</div>
+          </div>
+            <div style="border-top:1px solid #eef1f4;display:flex;gap:14px;padding:8px 0;align-items:flex-start">
+            <div style="flex:0 0 92px;font-weight:700;color:#2b6a8f;font-size:12.5px;white-space:nowrap;font-variant-numeric:tabular-nums">~19:00</div>
+            <div style="flex:1;font-size:13.5px;color:#4a5866;line-height:1.65">晚餐 <strong style="color:#25313d">富平罐頭夜市</strong>（부평깡통시장，邊走邊吃）；回程順路換錢（南浦洞換錢所匯率佳）</div>
+          </div>
+          </div>
+        </div>
+
+        <!-- Day 02 -->
+        <div style="border-bottom:1px dashed #dde5eb">
+          <div onclick="tog('02')" style="display:flex;gap:18px;padding:18px 0;cursor:pointer;user-select:none;align-items:flex-start">
+          <div style="width:48px;flex-shrink:0;text-align:center">
+            <div style="font-size:28px;font-weight:900;color:#3d6b8f;line-height:1">02</div>
+            <div style="font-size:11px;color:#8a97a4;margin-top:5px;line-height:1.4">Day 2</div>
+          </div>
+          <div style="flex:1;min-width:0">
+            <div style="font-size:15px;font-weight:700;color:#25313d;line-height:1.45">甘川洞文化村 → 松島纜車 → 札嘎其</div>
+            <div style="font-size:13px;color:#3d6b8f;margin-top:4px;line-height:1.65">🚌 小巴上甘川洞・🚠 松島海上纜車</div>
+            <div style="font-size:13px;color:#61707f;margin-top:3px">🏨 <a href="https://www.google.com/maps/search/?api=1&query=Aventree+Hotel+Busan+Nampo" target="_blank" rel="noopener" style="color:#3d6b8f;font-weight:600;text-decoration:none" class="hv3">Aventree Hotel Busan（南浦）</a><span>（第 2 晚）</span></div>
+            <div style="font-size:12px;color:#8a97a4;margin-top:5px;line-height:1.75">早 飯店/超商 · 午 甘川洞小食 · 晚 札嘎其市場海鮮</div>
+          </div>
+            <span id="ar-02" style="color:#c3ccd4;font-size:15px;flex-shrink:0;align-self:center">▸</span>
+          </div>
+          <div id="bd-02" style="display:none;padding:2px 0 20px 66px">
+            <div style="border-top:1px solid #eef1f4;display:flex;gap:14px;padding:8px 0;align-items:flex-start">
+            <div style="flex:0 0 92px;font-weight:700;color:#2b6a8f;font-size:12.5px;white-space:nowrap;font-variant-numeric:tabular-nums">~09:00</div>
+            <div style="flex:1;font-size:13.5px;color:#4a5866;line-height:1.65">早餐後出發：土城站（1 號線）→ 轉社區小巴（사하구 1-1／서구 2-2）上山，或計程車直達（南浦出發約 15 分）</div>
+          </div>
+            <div style="border-top:1px solid #eef1f4;display:flex;gap:14px;padding:8px 0;align-items:flex-start">
+            <div style="flex:0 0 92px;font-weight:700;color:#2b6a8f;font-size:12.5px;white-space:nowrap;font-variant-numeric:tabular-nums">~09:40</div>
+            <div style="flex:1;font-size:13.5px;color:#4a5866;line-height:1.65"><strong style="color:#25313d">甘川洞文化村</strong>：小王子與沙漠狐狸拍照點（早到避開排隊）、彩色屋眺望台、蓋章地圖散步（約 2.5–3h）</div>
+          </div>
+            <div style="border-top:1px solid #eef1f4;display:flex;gap:14px;padding:8px 0;align-items:flex-start">
+            <div style="flex:0 0 92px;font-weight:700;color:#2b6a8f;font-size:12.5px;white-space:nowrap;font-variant-numeric:tabular-nums">~12:30</div>
+            <div style="flex:1;font-size:13.5px;color:#4a5866;line-height:1.65">午餐 甘川洞小食（魚糕、糖餅）或下山到土城站周邊正餐</div>
+          </div>
+            <div style="border-top:1px solid #eef1f4;display:flex;gap:14px;padding:8px 0;align-items:flex-start">
+            <div style="flex:0 0 92px;font-weight:700;color:#2b6a8f;font-size:12.5px;white-space:nowrap;font-variant-numeric:tabular-nums">~14:00</div>
+            <div style="flex:1;font-size:13.5px;color:#4a5866;line-height:1.65">計程車或公車往 <strong style="color:#25313d">松島海水浴場</strong>：走 <strong style="color:#25313d">松島天空步道</strong>（海上龍宮橋）</div>
+          </div>
+            <div style="border-top:1px solid #eef1f4;display:flex;gap:14px;padding:8px 0;align-items:flex-start">
+            <div style="flex:0 0 92px;font-weight:700;color:#2b6a8f;font-size:12.5px;white-space:nowrap;font-variant-numeric:tabular-nums">~15:00</div>
+            <div style="flex:1;font-size:13.5px;color:#4a5866;line-height:1.65"><strong style="color:#25313d">松島海上纜車</strong>（一般車廂即可，水晶車廂加價）→ 松島龍宮雲橋〔候選〕</div>
+          </div>
+            <div style="border-top:1px solid #eef1f4;display:flex;gap:14px;padding:8px 0;align-items:flex-start">
+            <div style="flex:0 0 92px;font-weight:700;color:#2b6a8f;font-size:12.5px;white-space:nowrap;font-variant-numeric:tabular-nums">~17:30</div>
+            <div style="flex:1;font-size:13.5px;color:#4a5866;line-height:1.65">回南浦：<strong style="color:#25313d">札嘎其市場</strong>（자갈치시장）1F 挑海鮮、2F 代客料理（帝王蟹先問價再秤重）</div>
+          </div>
+            <div style="border-top:1px solid #eef1f4;display:flex;gap:14px;padding:8px 0;align-items:flex-start">
+            <div style="flex:0 0 92px;font-weight:700;color:#2b6a8f;font-size:12.5px;white-space:nowrap;font-variant-numeric:tabular-nums">~19:30</div>
+            <div style="flex:1;font-size:13.5px;color:#4a5866;line-height:1.65">〔候選〕影島 <strong style="color:#25313d">白淺灘文化村</strong>夕陽或 <strong style="color:#25313d">樂天百貨光復店頂樓</strong>免費展望台看夜景</div>
+          </div>
+          </div>
+        </div>
+
+        <!-- Day 03 -->
+        <div style="border-bottom:1px dashed #dde5eb">
+          <div onclick="tog('03')" style="display:flex;gap:18px;padding:18px 0;cursor:pointer;user-select:none;align-items:flex-start">
+          <div style="width:48px;flex-shrink:0;text-align:center">
+            <div style="font-size:28px;font-weight:900;color:#2b8a80;line-height:1">03</div>
+            <div style="font-size:11px;color:#8a97a4;margin-top:5px;line-height:1.4">Day 3</div>
+          </div>
+          <div style="flex:1;min-width:0">
+            <div style="font-size:15px;font-weight:700;color:#25313d;line-height:1.45">移動海雲台 → 海東龍宮寺 → 青沙浦膠囊列車</div>
+            <div style="font-size:13px;color:#3d6b8f;margin-top:4px;line-height:1.65">🚇 南浦→海雲台・🚌 181 公車・🚃 Blueline Park</div>
+            <div style="font-size:13px;color:#61707f;margin-top:3px">🏨 <a href="https://www.google.com/maps/search/?api=1&query=Shilla+Stay+Haeundae" target="_blank" rel="noopener" style="color:#3d6b8f;font-weight:600;text-decoration:none" class="hv3">Shilla Stay 海雲台</a><span>（第 1 晚）</span></div>
+            <div style="font-size:12px;color:#8a97a4;margin-top:5px;line-height:1.75">早 飯店退房前 · 午 青沙浦（貝殼鍋/海鮮麵） · 晚 The Bay 101 夜景＋海雲台市場</div>
+          </div>
+            <span id="ar-03" style="color:#c3ccd4;font-size:15px;flex-shrink:0;align-self:center">▸</span>
+          </div>
+          <div id="bd-03" style="display:none;padding:2px 0 20px 66px">
+            <div style="border-top:1px solid #eef1f4;display:flex;gap:14px;padding:8px 0;align-items:flex-start">
+            <div style="flex:0 0 92px;font-weight:700;color:#2b6a8f;font-size:12.5px;white-space:nowrap;font-variant-numeric:tabular-nums">~08:30</div>
+            <div style="flex:1;font-size:13.5px;color:#4a5866;line-height:1.65">早餐、退房；南浦站 1 號線 → 西面轉 2 號線 → <strong style="color:#25313d">海雲台站</strong>（約 50 分）；行李寄飯店櫃檯</div>
+          </div>
+            <div style="border-top:1px solid #eef1f4;display:flex;gap:14px;padding:8px 0;align-items:flex-start">
+            <div style="flex:0 0 92px;font-weight:700;color:#2b6a8f;font-size:12.5px;white-space:nowrap;font-variant-numeric:tabular-nums">~10:00</div>
+            <div style="flex:1;font-size:13.5px;color:#4a5866;line-height:1.65">海雲台站轉 <strong style="color:#25313d">181 公車</strong>（約 40 分）→ <strong style="color:#25313d">海東龍宮寺</strong>：海岸岩壁寺廟、108 階、許願龜（人潮多，越早越好）</div>
+          </div>
+            <div style="border-top:1px solid #eef1f4;display:flex;gap:14px;padding:8px 0;align-items:flex-start">
+            <div style="flex:0 0 92px;font-weight:700;color:#2b6a8f;font-size:12.5px;white-space:nowrap;font-variant-numeric:tabular-nums">~12:30</div>
+            <div style="flex:1;font-size:13.5px;color:#4a5866;line-height:1.65">公車或計程車往 <strong style="color:#25313d">青沙浦</strong>；午餐 青沙浦名物：조개구이 烤貝、海鮮刀削麵</div>
+          </div>
+            <div style="border-top:1px solid #eef1f4;display:flex;gap:14px;padding:8px 0;align-items:flex-start">
+            <div style="flex:0 0 92px;font-weight:700;color:#2b6a8f;font-size:12.5px;white-space:nowrap;font-variant-numeric:tabular-nums">~14:00</div>
+            <div style="flex:1;font-size:13.5px;color:#4a5866;line-height:1.65"><strong style="color:#25313d">Blueline Park</strong>：青沙浦 → 尾浦搭 <strong style="color:#25313d">天空膠囊列車</strong>（스카이캡슐，建議提早線上訂位；紅綠藍黃四色車廂）；沿線紅白燈塔、踏石展望台</div>
+          </div>
+            <div style="border-top:1px solid #eef1f4;display:flex;gap:14px;padding:8px 0;align-items:flex-start">
+            <div style="flex:0 0 92px;font-weight:700;color:#2b6a8f;font-size:12.5px;white-space:nowrap;font-variant-numeric:tabular-nums">~15:30</div>
+            <div style="flex:1;font-size:13.5px;color:#4a5866;line-height:1.65">尾浦下車沿 <strong style="color:#25313d">海雲台海水浴場</strong>沙灘散步 → 回飯店 check-in 拿房</div>
+          </div>
+            <div style="border-top:1px solid #eef1f4;display:flex;gap:14px;padding:8px 0;align-items:flex-start">
+            <div style="flex:0 0 92px;font-weight:700;color:#2b6a8f;font-size:12.5px;white-space:nowrap;font-variant-numeric:tabular-nums">~17:30</div>
+            <div style="flex:1;font-size:13.5px;color:#4a5866;line-height:1.65">〔候選〕<strong style="color:#25313d">BUSAN X the SKY</strong>（LCT 98–100F 展望台，日落前 1h 進場最美）</div>
+          </div>
+            <div style="border-top:1px solid #eef1f4;display:flex;gap:14px;padding:8px 0;align-items:flex-start">
+            <div style="flex:0 0 92px;font-weight:700;color:#2b6a8f;font-size:12.5px;white-space:nowrap;font-variant-numeric:tabular-nums">~19:00</div>
+            <div style="flex:1;font-size:13.5px;color:#4a5866;line-height:1.65">晚餐 <strong style="color:#25313d">海雲台市場</strong>（湯飯、烤鰻）或 <strong style="color:#25313d">The Bay 101</strong> 看對岸大樓夜景（炸物配啤酒）</div>
+          </div>
+          </div>
+        </div>
+
+        <!-- Day 04 -->
+        <div style="border-bottom:1px dashed #dde5eb">
+          <div onclick="tog('04')" style="display:flex;gap:18px;padding:18px 0;cursor:pointer;user-select:none;align-items:flex-start">
+          <div style="width:48px;flex-shrink:0;text-align:center">
+            <div style="font-size:28px;font-weight:900;color:#3e8a5f;line-height:1">04</div>
+            <div style="font-size:11px;color:#8a97a4;margin-top:5px;line-height:1.4">Day 4</div>
+          </div>
+          <div style="flex:1;min-width:0">
+            <div style="font-size:15px;font-weight:700;color:#25313d;line-height:1.45">冬柏島 → Centum City → 廣安里夜景</div>
+            <div style="font-size:13px;color:#3d6b8f;margin-top:4px;line-height:1.65">🚶 海岸散步・🛍 新世界百貨・🌉 廣安大橋</div>
+            <div style="font-size:13px;color:#61707f;margin-top:3px">🏨 <a href="https://www.google.com/maps/search/?api=1&query=Shilla+Stay+Haeundae" target="_blank" rel="noopener" style="color:#3d6b8f;font-weight:600;text-decoration:none" class="hv3">Shilla Stay 海雲台</a><span>（第 2 晚）</span></div>
+            <div style="font-size:12px;color:#8a97a4;margin-top:5px;line-height:1.75">早 飯店/咖啡店 · 午 Centum City 美食街 · 晚 廣安里烤肉/生魚片</div>
+          </div>
+            <span id="ar-04" style="color:#c3ccd4;font-size:15px;flex-shrink:0;align-self:center">▸</span>
+          </div>
+          <div id="bd-04" style="display:none;padding:2px 0 20px 66px">
+            <div style="border-top:1px solid #eef1f4;display:flex;gap:14px;padding:8px 0;align-items:flex-start">
+            <div style="flex:0 0 92px;font-weight:700;color:#2b6a8f;font-size:12.5px;white-space:nowrap;font-variant-numeric:tabular-nums">~09:30</div>
+            <div style="flex:1;font-size:13.5px;color:#4a5866;line-height:1.65"><strong style="color:#25313d">冬柏島海岸散步道</strong>：누리마루 APEC 世峰樓、燈塔、望廣安大橋（環島一圈約 1h）</div>
+          </div>
+            <div style="border-top:1px solid #eef1f4;display:flex;gap:14px;padding:8px 0;align-items:flex-start">
+            <div style="flex:0 0 92px;font-weight:700;color:#2b6a8f;font-size:12.5px;white-space:nowrap;font-variant-numeric:tabular-nums">~11:30</div>
+            <div style="flex:1;font-size:13.5px;color:#4a5866;line-height:1.65">2 號線 → Centum City：<strong style="color:#25313d">新世界百貨 Centum City</strong>（金氏紀錄世界最大百貨）；午餐 B1 美食街</div>
+          </div>
+            <div style="border-top:1px solid #eef1f4;display:flex;gap:14px;padding:8px 0;align-items:flex-start">
+            <div style="flex:0 0 92px;font-weight:700;color:#2b6a8f;font-size:12.5px;white-space:nowrap;font-variant-numeric:tabular-nums">~13:30</div>
+            <div style="flex:1;font-size:13.5px;color:#4a5866;line-height:1.65">〔候選〕<strong style="color:#25313d">Spa Land</strong>（新世界內，汗蒸幕 2–3h 剛好）或電影殿堂、Shinsegae 免稅樓層採買</div>
+          </div>
+            <div style="border-top:1px solid #eef1f4;display:flex;gap:14px;padding:8px 0;align-items:flex-start">
+            <div style="flex:0 0 92px;font-weight:700;color:#2b6a8f;font-size:12.5px;white-space:nowrap;font-variant-numeric:tabular-nums">~16:30</div>
+            <div style="flex:1;font-size:13.5px;color:#4a5866;line-height:1.65">2 號線 → 廣安站：<strong style="color:#25313d">廣安里海水浴場</strong>沙灘散步、海景咖啡店下午茶</div>
+          </div>
+            <div style="border-top:1px solid #eef1f4;display:flex;gap:14px;padding:8px 0;align-items:flex-start">
+            <div style="flex:0 0 92px;font-weight:700;color:#2b6a8f;font-size:12.5px;white-space:nowrap;font-variant-numeric:tabular-nums">~18:30</div>
+            <div style="flex:1;font-size:13.5px;color:#4a5866;line-height:1.65">晚餐 廣安里：烤肉、烤蛤蜊或民樂洞生魚片中心，選<strong style="color:#25313d">面海座位看廣安大橋點燈</strong></div>
+          </div>
+            <div style="border-top:1px solid #eef1f4;display:flex;gap:14px;padding:8px 0;align-items:flex-start">
+            <div style="flex:0 0 92px;font-weight:700;color:#2b6a8f;font-size:12.5px;white-space:nowrap;font-variant-numeric:tabular-nums">~20:00</div>
+            <div style="flex:1;font-size:13.5px;color:#4a5866;line-height:1.65">〔候選〕若逢<strong style="color:#25313d">週六</strong>：廣安里 <strong style="color:#25313d">M 無人機燈光秀</strong>（드론쇼，場次時間出發前查官網）；沙灘夜拍廣安大橋</div>
+          </div>
+          </div>
+        </div>
+
+        <!-- Day 05 -->
+        <div style="border-bottom:1px dashed #dde5eb">
+          <div onclick="tog('05')" style="display:flex;gap:18px;padding:18px 0;cursor:pointer;user-select:none;align-items:flex-start">
+          <div style="width:48px;flex-shrink:0;text-align:center">
+            <div style="font-size:28px;font-weight:900;color:#6b5ca8;line-height:1">05</div>
+            <div style="font-size:11px;color:#8a97a4;margin-top:5px;line-height:1.4">Day 5</div>
+          </div>
+          <div style="flex:1;min-width:0">
+            <div style="font-size:15px;font-weight:700;color:#25313d;line-height:1.45">西面・田浦採買 → PUS → 抵 TPE</div>
+            <div style="font-size:13px;color:#3d6b8f;margin-top:4px;line-height:1.65">🚇 海雲台→西面→沙上・✈ PUS → TPE</div>
+            <div style="font-size:13px;color:#61707f;margin-top:3px">🏨 <span>—（返台）</span><span></span></div>
+            <div style="font-size:12px;color:#8a97a4;margin-top:5px;line-height:1.75">早 田浦咖啡街 · 午 西面豬肉湯飯街 · 晚 機上/返家</div>
+          </div>
+            <span id="ar-05" style="color:#c3ccd4;font-size:15px;flex-shrink:0;align-self:center">▸</span>
+          </div>
+          <div id="bd-05" style="display:none;padding:2px 0 20px 66px">
+            <div style="border-top:1px solid #eef1f4;display:flex;gap:14px;padding:8px 0;align-items:flex-start">
+            <div style="flex:0 0 92px;font-weight:700;color:#2b6a8f;font-size:12.5px;white-space:nowrap;font-variant-numeric:tabular-nums">~08:30</div>
+            <div style="flex:1;font-size:13.5px;color:#4a5866;line-height:1.65">早餐、退房；2 號線 → <strong style="color:#25313d">田浦站</strong>：田浦咖啡街早午餐（전포카페거리）</div>
+          </div>
+            <div style="border-top:1px solid #eef1f4;display:flex;gap:14px;padding:8px 0;align-items:flex-start">
+            <div style="flex:0 0 92px;font-weight:700;color:#2b6a8f;font-size:12.5px;white-space:nowrap;font-variant-numeric:tabular-nums">~10:30</div>
+            <div style="flex:1;font-size:13.5px;color:#4a5866;line-height:1.65"><strong style="color:#25313d">西面</strong>最後採買：西面地下街（服飾美妝）、樂天百貨釜山本店；Olive Young 補貨面膜、零食伴手禮（超市：香蕉牛奶、海苔、辛拉麵）</div>
+          </div>
+            <div style="border-top:1px solid #eef1f4;display:flex;gap:14px;padding:8px 0;align-items:flex-start">
+            <div style="flex:0 0 92px;font-weight:700;color:#2b6a8f;font-size:12.5px;white-space:nowrap;font-variant-numeric:tabular-nums">~12:00</div>
+            <div style="flex:1;font-size:13.5px;color:#4a5866;line-height:1.65">午餐 <strong style="color:#25313d">西面豬肉湯飯街</strong>（돼지국밥 골목，釜山最後一碗）</div>
+          </div>
+            <div style="border-top:1px solid #eef1f4;display:flex;gap:14px;padding:8px 0;align-items:flex-start">
+            <div style="flex:0 0 92px;font-weight:700;color:#2b6a8f;font-size:12.5px;white-space:nowrap;font-variant-numeric:tabular-nums">~13:30</div>
+            <div style="flex:1;font-size:13.5px;color:#4a5866;line-height:1.65">西面 1 號線 → 沙上轉 <strong style="color:#25313d">機場輕軌 BGL</strong> → 金海機場（約 40 分；行李多改計程車約 30 分）</div>
+          </div>
+            <div style="border-top:1px solid #eef1f4;display:flex;gap:14px;padding:8px 0;align-items:flex-start">
+            <div style="flex:0 0 92px;font-weight:700;color:#2b6a8f;font-size:12.5px;white-space:nowrap;font-variant-numeric:tabular-nums">~14:30</div>
+            <div style="flex:1;font-size:13.5px;color:#4a5866;line-height:1.65">報到、辦 <strong style="color:#25313d">Tax Refund 退稅</strong>（單筆 ₩15,000 以上；先海關蓋章再托運）</div>
+          </div>
+            <div style="border-top:1px solid #eef1f4;display:flex;gap:14px;padding:8px 0;align-items:flex-start">
+            <div style="flex:0 0 92px;font-weight:700;color:#2b6a8f;font-size:12.5px;white-space:nowrap;font-variant-numeric:tabular-nums">~17:00</div>
+            <div style="flex:1;font-size:13.5px;color:#4a5866;line-height:1.65">PUS → TPE（約 2h30；抵台約晚間，返家）</div>
+          </div>
+          </div>
+        </div>
+
+    </div>
+
+    <!-- flights -->
+    <div id="flights" style="scroll-margin-top:20px">
+      <div onclick="tgF()" style="display:flex;align-items:baseline;gap:12px;margin:38px 0 4px;cursor:pointer;user-select:none">
+        <span style="font-size:38px;font-weight:900;color:#e4eaef;line-height:1">✈</span>
+        <div style="font-size:16px;font-weight:900;color:#25313d">航班<span style="font-weight:500;color:#8a97a4;font-size:12.5px">（TPE ⇄ PUS 直飛，開票後填入）</span></div>
+        <span style="margin-left:auto;font-size:12px;color:#8a97a4;white-space:nowrap"><span id="fHint">點開看時刻</span> <span id="fArrow">▸</span></span>
+      </div>
+      <div style="height:1px;background:#25313d;margin-bottom:4px"></div>
+      <div id="fBody" style="display:none">
+        <div>
+
+            <div style="display:flex;gap:14px;padding:13px 0;border-bottom:1px dashed #dde5eb">
+              <span style="font-size:11.5px;font-weight:700;color:#3d6b8f;background:#e8f0f6;padding:2px 9px;border-radius:6px;flex-shrink:0;margin-top:2px;height:fit-content">去程</span>
+              <div style="flex:1">
+                <div style="font-size:14px;font-weight:700;color:#25313d;line-height:1.55">Day 1：TPE 上午 → PUS 中午前後（約 2h20）</div>
+                <div style="font-size:12.5px;color:#8a97a4">建議選上午班機，抵達後仍有大半天可用</div>
+              </div>
+            </div>
+
+            <div style="display:flex;gap:14px;padding:13px 0;border-bottom:1px dashed #dde5eb">
+              <span style="font-size:11.5px;font-weight:700;color:#6b5ca8;background:#eeeaf8;padding:2px 9px;border-radius:6px;flex-shrink:0;margin-top:2px;height:fit-content">回程</span>
+              <div style="flex:1">
+                <div style="font-size:14px;font-weight:700;color:#25313d;line-height:1.55">Day 5：PUS 傍晚 → TPE 晚間（約 2h30）</div>
+                <div style="font-size:12.5px;color:#8a97a4">選傍晚班機，最後一天還能逛西面、吃午餐</div>
+              </div>
+            </div>
+
+          <p style="font-size:12.5px;color:#a07830;background:#fbf5e9;border-radius:10px;padding:11px 14px;line-height:1.75;margin:14px 0 0">✈ TPE–PUS 直飛航班多（華航、長榮、星宇、台灣虎航、釜山航空、濟州航空等）；實際航班號與時刻開票後回填此處。⚠ 韓國比台灣<strong>快 1 小時</strong>，看時刻表注意當地時間。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- tips -->
+    <div id="tips" style="scroll-margin-top:20px;margin-top:30px">
+      <div onclick="tog('tips')" style="display:flex;align-items:baseline;gap:12px;margin:0 0 4px;cursor:pointer;user-select:none">
+        <span style="font-size:38px;font-weight:900;color:#e4eaef;line-height:1">💡</span>
+        <div style="font-size:16px;font-weight:900;color:#25313d">全程備忘</div>
+      <span style="margin-left:auto;font-size:13px;color:#8a97a4"><span id="ar-tips">▸</span></span>
+      </div>
+      <div style="height:1px;background:#25313d;margin-bottom:12px"></div>
+      <div id="bd-tips" style="display:none">
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <div style="display:flex;gap:12px;align-items:flex-start"><span style="flex-shrink:0;font-size:16px">💳</span><p style="font-size:13.5px;color:#61707f;line-height:1.7;margin:0"><strong style="color:#25313d">交通卡</strong>：抵達當天先買 T-money／Cashbee（便利商店有售），地鐵、公車、輕軌通用；地鐵單程約 ₩1,550 起，市區移動以 1、2 號線為主。</p></div>
+        <div style="display:flex;gap:12px;align-items:flex-start"><span style="flex-shrink:0;font-size:16px">📱</span><p style="font-size:13.5px;color:#61707f;line-height:1.7;margin:0"><strong style="color:#25313d">必備 App</strong>：Naver Map／Kakao Map（Google Maps 在韓國導航不準）、Kakao T（叫車）、Papago（翻譯）。景點名可先存 Naver 收藏清單。</p></div>
+        <div style="display:flex;gap:12px;align-items:flex-start"><span style="flex-shrink:0;font-size:16px">💰</span><p style="font-size:13.5px;color:#61707f;line-height:1.7;margin:0"><strong style="color:#25313d">換錢</strong>：南浦洞、西面換錢所匯率通常優於機場與台灣銀行；刷卡普及，但市場、小吃攤備現金。單筆滿 ₩15,000 可辦退稅。</p></div>
+        <div style="display:flex;gap:12px;align-items:flex-start"><span style="flex-shrink:0;font-size:16px">🍜</span><p style="font-size:13.5px;color:#61707f;line-height:1.7;margin:0"><strong style="color:#25313d">釜山必吃</strong>：豬肉湯飯（돼지국밥）、小麥冷麵（밀면）、魚糕（어묵）、黑糖堅果餅（씨앗호떡）、烤盲鰻、札嘎其海鮮、青沙浦烤貝。</p></div>
+        <div style="display:flex;gap:12px;align-items:flex-start"><span style="flex-shrink:0;font-size:16px">🔌</span><p style="font-size:13.5px;color:#61707f;line-height:1.7;margin:0"><strong style="color:#25313d">電壓網路</strong>：220V 圓孔（Type C/F）轉接頭；eSIM／SIM 在台灣先買好，或機場櫃檯領 WiFi 機。</p></div>
+        <div style="display:flex;gap:12px;align-items:flex-start"><span style="flex-shrink:0;font-size:16px">📋</span><p style="font-size:13.5px;color:#61707f;line-height:1.7;margin:0"><strong style="color:#25313d">簽證</strong>：台灣護照免簽 90 天；K-ETA 對台灣暫時免除（試辦期程會變動，<strong style="color:#25313d">出發前務必再確認</strong>）。入境前線上填電子入境卡（e-Arrival Card）可加速通關。</p></div>
+        <div style="display:flex;gap:12px;align-items:flex-start"><span style="flex-shrink:0;font-size:16px">🚨</span><p style="font-size:13.5px;color:#61707f;line-height:1.7;margin:0"><strong style="color:#25313d">緊急</strong>：112 警察 / 119 消防救護 / 1330 觀光翻譯熱線（有中文）。</p></div>
+      </div>
+      </div>
+    </div>
+
+    <!-- pack -->
+    <div id="pack" style="scroll-margin-top:20px;margin-top:30px">
+      <div onclick="tog('pack')" style="display:flex;align-items:baseline;gap:12px;margin:0 0 4px;cursor:pointer;user-select:none">
+        <span style="font-size:38px;font-weight:900;color:#e4eaef;line-height:1">🧳</span>
+        <div style="font-size:16px;font-weight:900;color:#25313d">打包重點</div>
+      <span style="margin-left:auto;font-size:13px;color:#8a97a4"><span id="ar-pack">▸</span></span>
+      </div>
+      <div style="height:1px;background:#25313d;margin-bottom:12px"></div>
+      <div id="bd-pack" style="display:none">
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <div style="display:flex;gap:12px;align-items:flex-start"><span style="flex-shrink:0;font-size:16px">👟</span><p style="font-size:13.5px;color:#61707f;line-height:1.7;margin:0">好走的鞋（甘川洞、龍宮寺階梯多）、海邊防風外套；夏季防曬帽＋水壺、冬季保暖（釜山海風強，體感更冷）。</p></div>
+        <div style="display:flex;gap:12px;align-items:flex-start"><span style="flex-shrink:0;font-size:16px">🔌</span><p style="font-size:13.5px;color:#61707f;line-height:1.7;margin:0">Type C/F 轉接插頭、行動電源（地鐵移動多、拍照耗電）；eSIM 出發前先裝好測試。</p></div>
+        <div style="display:flex;gap:12px;align-items:flex-start"><span style="flex-shrink:0;font-size:16px">🧾</span><p style="font-size:13.5px;color:#61707f;line-height:1.7;margin:0">行李箱預留伴手禮空間（Olive Young、超市零食很佔位）；退稅單據集中收好，機場先蓋章再托運。</p></div>
+      </div>
+      </div>
+    </div>
+
+    <!-- rain -->
+    <div id="rain" style="scroll-margin-top:20px;margin-top:30px">
+      <div onclick="tog('rain')" style="display:flex;align-items:baseline;gap:12px;margin:0 0 4px;cursor:pointer;user-select:none">
+        <span style="font-size:38px;font-weight:900;color:#e4eaef;line-height:1">🌧</span>
+        <div style="font-size:16px;font-weight:900;color:#3d6b8f">雨天備案</div>
+      <span style="margin-left:auto;font-size:13px;color:#8a97a4"><span id="ar-rain">▸</span></span>
+      </div>
+      <div style="height:1px;background:#25313d;margin-bottom:12px"></div>
+      <div id="bd-rain" style="display:none">
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <div style="display:flex;gap:12px;align-items:flex-start"><span style="flex-shrink:0;font-size:16px">🧖</span><p style="font-size:13.5px;color:#61707f;line-height:1.7;margin:0"><strong style="color:#25313d">Spa Land</strong>（Centum City 新世界內）：汗蒸幕泡一下午，雨天首選。</p></div>
+        <div style="display:flex;gap:12px;align-items:flex-start"><span style="flex-shrink:0;font-size:16px">🛍</span><p style="font-size:13.5px;color:#61707f;line-height:1.7;margin:0"><strong style="color:#25313d">室內購物</strong>：新世界／樂天百貨、西面地下街、樂天光復店；富平罐頭市場多有頂棚，小雨照逛。</p></div>
+        <div style="display:flex;gap:12px;align-items:flex-start"><span style="flex-shrink:0;font-size:16px">🌆</span><p style="font-size:13.5px;color:#61707f;line-height:1.7;margin:0"><strong style="color:#25313d">BUSAN X the SKY</strong>（海雲台 LCT 展望台）與 <strong style="color:#25313d">SEA LIFE 釜山水族館</strong>：海雲台雨天替代。</p></div>
+        <div style="display:flex;gap:12px;align-items:flex-start"><span style="flex-shrink:0;font-size:16px">🎬</span><p style="font-size:13.5px;color:#61707f;line-height:1.7;margin:0"><strong style="color:#25313d">電影殿堂</strong>（釜山影展主場館）、<strong style="color:#25313d">釜山博物館</strong>：Centum City 周邊室內行程。</p></div>
+        <div style="display:flex;gap:12px;align-items:flex-start"><span style="flex-shrink:0;font-size:16px">🚠</span><p style="font-size:13.5px;color:#61707f;line-height:1.7;margin:0"><strong style="color:#25313d">松島纜車、膠囊列車</strong>：小雨照開，濃霧或強風停駛——出發前查官網公告，順序可與其他天對調。</p></div>
+      </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div style="text-align:center;font-size:12px;color:#a8b3bd;margin-top:44px;padding-top:20px;border-top:1px solid #edf1f4;line-height:2">
+      行程版本：Busan 5-Day Plan｜票價、時刻、開放時間出發前以官方平台再次確認<br>
+      參考版型：Norway Plan Project
+    </div>
+
+  </div>
+</div>
+<script>
+function tgF(){
+  var b=document.getElementById('fBody'),open=b.style.display!=='none';
+  b.style.display=open?'none':'block';
+  document.getElementById('fArrow').textContent=open?'▸':'▾';
+  document.getElementById('fHint').textContent=open?'點開看時刻':'收合';
+}
+var DAYS=["01","02","03","04","05"];
+function tog(id){var b=document.getElementById('bd-'+id);if(!b)return;var o=b.style.display!=='none';b.style.display=o?'none':'block';var a=document.getElementById('ar-'+id);if(a)a.textContent=o?'▸':'▾';syncAll();}
+function syncAll(){var all=DAYS.every(function(d){return document.getElementById('bd-'+d).style.display!=='none';});var t=document.getElementById('togAllBtn');if(t)t.textContent=all?'▴ 全部收合':'▾ 全部展開';}
+function togAll(e){e.preventDefault();var all=DAYS.every(function(d){return document.getElementById('bd-'+d).style.display!=='none';});DAYS.forEach(function(d){var b=document.getElementById('bd-'+d);b.style.display=all?'none':'block';var a=document.getElementById('ar-'+d);if(a)a.textContent=all?'▸':'▾';});syncAll();}
+if(location.hash==='#flights')tgF();
+</script>
+</body>
+</html>
