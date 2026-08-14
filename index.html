@@ -21,7 +21,6 @@ body{margin:0;background:#ffffff;font-family:'Noto Sans TC',sans-serif;-webkit-f
   <div style="border-bottom:1px solid #edf1f4;background:#f8fafb;overflow-x:auto">
     <div style="display:flex;gap:20px;padding:14px 20px;font-size:13px;white-space:nowrap;width:max-content;margin:0 auto">
       <a href="#schedule" style="color:#25313d;font-weight:700;text-decoration:none">📋 五日總表</a>
-      <a href="#map" style="color:#8a97a4;text-decoration:none" class="hv1">🗺 地圖</a>
       <a href="#flights" style="color:#8a97a4;text-decoration:none" class="hv1">✈ 航班</a>
       <a href="#tips" style="color:#8a97a4;text-decoration:none" class="hv1">💡 備忘</a>
     </div>
@@ -33,7 +32,7 @@ body{margin:0;background:#ffffff;font-family:'Noto Sans TC',sans-serif;-webkit-f
     <h1 style="font-size:clamp(26px,5vw,34px);font-weight:900;margin:12px 0 10px;line-height:1.3">🇰🇷 釜山五日流程總覽</h1>
     <p style="font-size:13.5px;color:#b9c8d5;margin:0 0 4px;line-height:1.9">南浦洞 → 甘川洞 → 松島 → 海雲台 → 青沙浦 → 廣安里 → 西面</p>
     <p style="font-size:13.5px;color:#b9c8d5;margin:0;line-height:1.9">TPE 直飛 PUS 約 2h20｜釜山 4 晚｜前 2 晚南浦・後 2 晚海雲台</p>
-    <div style="font-size:12px;color:#e8d3a3;margin-top:16px;background:rgba(255,255,255,.07);border-radius:10px;padding:9px 14px;display:inline-block">點任一天可展開當日時間軸；航班・地圖・備忘在最下方</div>
+    <div style="font-size:12px;color:#e8d3a3;margin-top:16px;background:rgba(255,255,255,.07);border-radius:10px;padding:9px 14px;display:inline-block">點任一天可展開當日時間軸；航班・備忘在最下方</div>
   </div>
 
   <div style="max-width:680px;margin:0 auto;padding:24px 20px 64px">
@@ -42,25 +41,9 @@ body{margin:0;background:#ffffff;font-family:'Noto Sans TC',sans-serif;-webkit-f
     <div style="display:flex;gap:8px;flex-wrap:wrap">
       <a href="#schedule" style="background:#f3f6f8;border:1px solid #e2e8ed;color:#61707f;font-size:12.5px;padding:5px 14px;border-radius:99px;text-decoration:none;white-space:nowrap" class="hv2">📋 總表</a>
       <a href="#flights" style="background:#f3f6f8;border:1px solid #e2e8ed;color:#61707f;font-size:12.5px;padding:5px 14px;border-radius:99px;text-decoration:none;white-space:nowrap" class="hv2">✈ 航班</a>
-      <a href="#map" style="background:#f3f6f8;border:1px solid #e2e8ed;color:#61707f;font-size:12.5px;padding:5px 14px;border-radius:99px;text-decoration:none;white-space:nowrap" class="hv2">🗺 地圖</a>
       <a href="#tips" style="background:#f3f6f8;border:1px solid #e2e8ed;color:#61707f;font-size:12.5px;padding:5px 14px;border-radius:99px;text-decoration:none;white-space:nowrap" class="hv2">💡 備忘</a>
     </div>
 
-    <!-- map -->
-    <div id="map" style="scroll-margin-top:20px;margin-top:8px">
-      <div onclick="tog('map')" style="display:flex;align-items:baseline;gap:12px;margin:0 0 4px;cursor:pointer;user-select:none">
-        <span style="font-size:38px;font-weight:900;color:#e4eaef;line-height:1">🗺</span>
-        <div style="font-size:16px;font-weight:900;color:#25313d">釜山行程地圖<span style="font-weight:500;color:#8a97a4;font-size:12.5px">（市區全覽）</span></div>
-        <span style="margin-left:auto;font-size:12px;color:#8a97a4"><span id="ar-map">▸</span></span>
-      </div>
-      <div style="height:1px;background:#25313d;margin-bottom:4px"></div>
-      <div id="bd-map" style="display:none">
-        <div style="position:relative;width:100%;padding-bottom:56%;height:0;overflow:hidden;border-radius:12px;margin-top:12px">
-          <iframe src="https://maps.google.com/maps?q=Busan%20Station&t=&z=11&ie=UTF8&iwloc=&output=embed" allowfullscreen="allowfullscreen" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0"></iframe>
-        </div>
-        <p style="font-size:12.5px;color:#8a97a4;line-height:1.75;margin:10px 2px 0">主要移動軸：南浦（1 號線）↔ 西面（1/2 號線轉乘站）↔ 海雲台（2 號線）；甘川洞、松島在西側，青沙浦、龍宮寺在東側。⚠ 在韓國 Google Maps 導航不準，請用 <strong style="color:#25313d">Naver Map／Kakao Map</strong>。</p>
-      </div>
-    </div>
 
     <!-- schedule -->
     <div id="schedule" style="scroll-margin-top:20px">
@@ -177,10 +160,10 @@ body{margin:0;background:#ffffff;font-family:'Noto Sans TC',sans-serif;-webkit-f
             <div style="font-size:11px;color:#8a97a4;margin-top:5px;line-height:1.4">Day 3</div>
           </div>
           <div style="flex:1;min-width:0">
-            <div style="font-size:15px;font-weight:700;color:#25313d;line-height:1.45">移動海雲台 → 海東龍宮寺 → 青沙浦膠囊列車</div>
-            <div style="font-size:13px;color:#3d6b8f;margin-top:4px;line-height:1.65">🚇 南浦→海雲台・🚌 181 公車・🚃 Blueline Park</div>
+            <div style="font-size:15px;font-weight:700;color:#25313d;line-height:1.45">移動海雲台 → 海東龍宮寺 → Skyline Luge → 青沙浦膠囊列車</div>
+            <div style="font-size:13px;color:#3d6b8f;margin-top:4px;line-height:1.65">🚇 南浦→海雲台・🚌 181 公車・🛷 Skyline Luge・🚃 Blueline Park</div>
             <div style="font-size:13px;color:#61707f;margin-top:3px">🏨 <a href="https://www.google.com/maps/search/?api=1&query=Shilla+Stay+Haeundae" target="_blank" rel="noopener" style="color:#3d6b8f;font-weight:600;text-decoration:none" class="hv3">Shilla Stay 海雲台</a><span>（第 1 晚）</span></div>
-            <div style="font-size:12px;color:#8a97a4;margin-top:5px;line-height:1.75">早 飯店退房前 · 午 青沙浦（貝殼鍋/海鮮麵） · 晚 The Bay 101 夜景＋海雲台市場</div>
+            <div style="font-size:12px;color:#8a97a4;margin-top:5px;line-height:1.75">早 飯店退房前 · 午 青沙浦（烤貝/海鮮麵） · 晚 The Bay 101 夜景＋海雲台市場</div>
           </div>
             <span id="ar-03" style="color:#c3ccd4;font-size:15px;flex-shrink:0;align-self:center">▸</span>
           </div>
@@ -194,15 +177,19 @@ body{margin:0;background:#ffffff;font-family:'Noto Sans TC',sans-serif;-webkit-f
             <div style="flex:1;font-size:13.5px;color:#4a5866;line-height:1.65">海雲台站轉 <strong style="color:#25313d">181 公車</strong>（約 40 分）→ <strong style="color:#25313d">海東龍宮寺</strong>：海岸岩壁寺廟、108 階、許願龜（人潮多，越早越好）</div>
           </div>
             <div style="border-top:1px solid #eef1f4;display:flex;gap:14px;padding:8px 0;align-items:flex-start">
-            <div style="flex:0 0 92px;font-weight:700;color:#2b6a8f;font-size:12.5px;white-space:nowrap;font-variant-numeric:tabular-nums">~12:30</div>
+            <div style="flex:0 0 92px;font-weight:700;color:#2b6a8f;font-size:12.5px;white-space:nowrap;font-variant-numeric:tabular-nums">~11:30</div>
+            <div style="flex:1;font-size:13.5px;color:#4a5866;line-height:1.65">計程車約 5 分 → <strong style="color:#25313d">Skyline Luge 釜山</strong>（스카이라인 루지，Osiria 觀光園區）：上山纜椅＋斜坡滑車，建議買 <strong style="color:#25313d">3–4 趟券</strong>一次玩夠（第一趟熟悉路線、後面才敢放手滑）；假日人多先線上購票</div>
+          </div>
+            <div style="border-top:1px solid #eef1f4;display:flex;gap:14px;padding:8px 0;align-items:flex-start">
+            <div style="flex:0 0 92px;font-weight:700;color:#2b6a8f;font-size:12.5px;white-space:nowrap;font-variant-numeric:tabular-nums">~13:30</div>
             <div style="flex:1;font-size:13.5px;color:#4a5866;line-height:1.65">公車或計程車往 <strong style="color:#25313d">青沙浦</strong>；午餐 青沙浦名物：조개구이 烤貝、海鮮刀削麵</div>
           </div>
             <div style="border-top:1px solid #eef1f4;display:flex;gap:14px;padding:8px 0;align-items:flex-start">
-            <div style="flex:0 0 92px;font-weight:700;color:#2b6a8f;font-size:12.5px;white-space:nowrap;font-variant-numeric:tabular-nums">~14:00</div>
+            <div style="flex:0 0 92px;font-weight:700;color:#2b6a8f;font-size:12.5px;white-space:nowrap;font-variant-numeric:tabular-nums">~15:00</div>
             <div style="flex:1;font-size:13.5px;color:#4a5866;line-height:1.65"><strong style="color:#25313d">Blueline Park</strong>：青沙浦 → 尾浦搭 <strong style="color:#25313d">天空膠囊列車</strong>（스카이캡슐，建議提早線上訂位；紅綠藍黃四色車廂）；沿線紅白燈塔、踏石展望台</div>
           </div>
             <div style="border-top:1px solid #eef1f4;display:flex;gap:14px;padding:8px 0;align-items:flex-start">
-            <div style="flex:0 0 92px;font-weight:700;color:#2b6a8f;font-size:12.5px;white-space:nowrap;font-variant-numeric:tabular-nums">~15:30</div>
+            <div style="flex:0 0 92px;font-weight:700;color:#2b6a8f;font-size:12.5px;white-space:nowrap;font-variant-numeric:tabular-nums">~16:00</div>
             <div style="flex:1;font-size:13.5px;color:#4a5866;line-height:1.65">尾浦下車沿 <strong style="color:#25313d">海雲台海水浴場</strong>沙灘散步 → 回飯店 check-in 拿房</div>
           </div>
             <div style="border-top:1px solid #eef1f4;display:flex;gap:14px;padding:8px 0;align-items:flex-start">
@@ -388,7 +375,7 @@ body{margin:0;background:#ffffff;font-family:'Noto Sans TC',sans-serif;-webkit-f
         <div style="display:flex;gap:12px;align-items:flex-start"><span style="flex-shrink:0;font-size:16px">🛍</span><p style="font-size:13.5px;color:#61707f;line-height:1.7;margin:0"><strong style="color:#25313d">室內購物</strong>：新世界／樂天百貨、西面地下街、樂天光復店；富平罐頭市場多有頂棚，小雨照逛。</p></div>
         <div style="display:flex;gap:12px;align-items:flex-start"><span style="flex-shrink:0;font-size:16px">🌆</span><p style="font-size:13.5px;color:#61707f;line-height:1.7;margin:0"><strong style="color:#25313d">BUSAN X the SKY</strong>（海雲台 LCT 展望台）與 <strong style="color:#25313d">SEA LIFE 釜山水族館</strong>：海雲台雨天替代。</p></div>
         <div style="display:flex;gap:12px;align-items:flex-start"><span style="flex-shrink:0;font-size:16px">🎬</span><p style="font-size:13.5px;color:#61707f;line-height:1.7;margin:0"><strong style="color:#25313d">電影殿堂</strong>（釜山影展主場館）、<strong style="color:#25313d">釜山博物館</strong>：Centum City 周邊室內行程。</p></div>
-        <div style="display:flex;gap:12px;align-items:flex-start"><span style="flex-shrink:0;font-size:16px">🚠</span><p style="font-size:13.5px;color:#61707f;line-height:1.7;margin:0"><strong style="color:#25313d">松島纜車、膠囊列車</strong>：小雨照開，濃霧或強風停駛——出發前查官網公告，順序可與其他天對調。</p></div>
+        <div style="display:flex;gap:12px;align-items:flex-start"><span style="flex-shrink:0;font-size:16px">🚠</span><p style="font-size:13.5px;color:#61707f;line-height:1.7;margin:0"><strong style="color:#25313d">松島纜車、膠囊列車、Skyline Luge</strong>：小雨纜車照開，Luge 滑道雨天多半暫停、濃霧強風全部停駛——出發前查官網公告，順序可與其他天對調。</p></div>
       </div>
       </div>
     </div>
