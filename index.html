@@ -52,9 +52,17 @@ button{font:inherit;background:#e9f2f7;border:1px solid #b6cbd9;border-radius:8p
 ul{padding-left:22px}li{margin:7px 0}.muted{color:#61707f;font-size:14px}footer{margin-top:36px;border-top:1px solid #dde5eb;padding-top:20px;font-size:14px;color:#61707f}
 @media(max-width:560px){.card,details{padding:14px 12px}td:first-child{width:74px}th,td{padding:10px 5px}table{font-size:14px}.hero{padding:30px 16px}}
 @media print{nav,button{display:none}.hero{background:white;color:#25313d}details{break-inside:avoid}}
+
+html{scroll-behavior:smooth}
+.back-to-top{position:fixed;right:16px;bottom:calc(20px + env(safe-area-inset-bottom, 0px));z-index:10;display:flex;align-items:center;justify-content:center;min-width:64px;min-height:48px;padding:0 12px;border-radius:24px;background:#25313d;color:#fff;text-decoration:none;font-size:14px;font-weight:700;box-shadow:0 3px 12px #0003}
+.back-to-top:hover{background:#28658b}
+.back-to-top:focus-visible{outline:3px solid #d8a344;outline-offset:4px}
+footer{padding-bottom:76px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media print{.back-to-top{display:none}}
 </style>
 </head>
-<body>
+<body id="top">
 <header class="hero"><div>BUSAN · 2026.12.24–12.28 · 4 NIGHTS</div><h1>釜山親子聖誕五日</h1><p>2 大 2 小｜5 歲・110 cm／3 歲・90 cm</p><p>Luge 優先・小火車・親子時光・聖誕候選</p></header>
 <nav aria-label="主要導覽"><div><a href="#schedule">每日行程</a><a href="#stay">住宿與泳池</a><a href="#flights">航班</a><a href="#transport">交通</a><a href="#xmas">聖誕活動</a><a href="#todo">行前待辦</a><a href="#sources">查證來源</a></div></nav>
 <main class="wrap">
@@ -112,6 +120,7 @@ ul{padding-left:22px}li{margin:7px 0}.muted{color:#61707f;font-size:14px}footer{
 </ul></section>
 <footer>釜山親子旅行・更新 2026/10/06<br>日期與航班已確認；住宿暫定，交通、票券及 2026 聖誕活動尚未確認。未展示訂位代碼或個人證件資料。</footer>
 </main>
+<a class="back-to-top" href="#top" aria-label="回到頁首">↑ TOP</a>
 <script>
 const days = [...document.querySelectorAll('details.day')];
 const toggle = document.getElementById('toggle-days');
