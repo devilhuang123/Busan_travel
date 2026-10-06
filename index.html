@@ -60,10 +60,50 @@ html{scroll-behavior:smooth}
 footer{padding-bottom:76px}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 @media print{.back-to-top{display:none}}
+
+/* Christmas theme */
+:root{--pine:#123d32;--wine:#8f263d;--gold:#ceab64;--ink:#243c35}
+body{background:#f4f6f3;color:var(--ink)}
+.hero{position:relative;isolation:isolate;overflow:hidden;background:linear-gradient(120deg,#102e27,#194f40 60%,#14372f);border-bottom:4px solid var(--gold);padding:38px 20px 30px}
+.hero::after{content:"";position:absolute;inset:12px;border:1px solid #ceab6460;border-radius:12px;pointer-events:none;z-index:-1}
+.hero>div:not(.snowfall){font-size:13px;letter-spacing:.12em;color:#e5ce9b}
+.hero h1{color:#fff8e7;letter-spacing:.035em;text-shadow:0 2px 14px #0003}
+.hero p{color:#e0ebe4}
+.festive-stars{display:block;color:#edcf82;font-size:21px;letter-spacing:18px;padding-left:18px;margin-bottom:7px;animation:star-glow 3s ease-in-out infinite}
+nav{background:#fffcf5;border-bottom:1px solid #d9c9a7}
+nav a{color:var(--pine);font-weight:700;border-radius:6px;padding:3px 6px}
+nav a:hover{background:#f1e5cf;color:var(--wine)}
+h2{color:var(--pine);border-color:var(--gold)}
+a{color:#8b2940}
+.card,details{border-color:#dbdfd5;box-shadow:0 3px 14px #123d3205}
+details.day{border-left:5px solid var(--pine);transition:border-color .2s,box-shadow .2s}
+details.day:nth-of-type(even){border-left-color:var(--wine)}
+details.day[open]{border-color:#b6c5b7;border-left-color:var(--gold);box-shadow:0 5px 22px #123d320b}
+summary{color:var(--pine)}summary::marker{color:var(--wine)}
+summary small{color:#617069}
+th{color:var(--pine)}th,td{border-bottom-color:#e5e9e0}
+.tag.confirmed{background:#e1eee4;color:#245237}.tag.pending{background:#f5e9d0;color:#78561b}
+.note{background:#faf0db;color:#73531d}.warn{background:#f8e9e9;color:#862d3b}
+button{background:var(--pine);border-color:var(--pine);color:#fffaf0}
+button:hover{background:#205b47}
+button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #c59c4b;outline-offset:4px}
+.back-to-top{background:var(--wine);border:1px solid #c78a91;box-shadow:0 4px 16px #54203226}
+.back-to-top:hover{background:#6e1d30}
+.motion-toggle{position:relative;z-index:1;margin-top:12px;background:transparent;border:1px solid #a6bb9f;color:#f6edda;font-size:14px;padding:5px 13px;border-radius:20px}
+.motion-toggle:hover{background:#ffffff15}
+.snowfall{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:-1}
+.snowfall i{position:absolute;top:-12px;left:var(--x);width:var(--size);height:var(--size);border-radius:50%;background:#fff;opacity:0;animation:snowfall var(--duration) linear infinite;animation-delay:var(--delay)}
+@keyframes snowfall{0%{transform:translate3d(0,-10px,0);opacity:0}10%{opacity:.65}85%{opacity:.5}100%{transform:translate3d(28px,330px,0);opacity:0}}
+@keyframes star-glow{0%,100%{opacity:.7}50%{opacity:1;text-shadow:0 0 12px #e8bd65aa}}
+body.motion-off .snowfall i,body.motion-off .festive-stars{animation:none}
+body.motion-off .snowfall{display:none}
+@media(prefers-reduced-motion:reduce){.snowfall{display:none}.festive-stars{animation:none}details.day{transition:none}}
+@media(max-width:560px){.hero{padding:30px 16px 24px}.hero p{font-size:14px}.hero>div:not(.snowfall){font-size:12px;letter-spacing:.07em}nav div{gap:10px}.wrap{padding-top:16px}}
+@media print{body{background:white}.hero{background:white;border-color:#777}.hero h1,.hero p,.hero>div:not(.snowfall){color:#222}.snowfall,.festive-stars,.motion-toggle{display:none}details{box-shadow:none}}
 </style>
 </head>
 <body id="top">
-<header class="hero"><div>BUSAN · 2026.12.24–12.28 · 4 NIGHTS</div><h1>釜山親子聖誕五日</h1><p>2 大 2 小｜5 歲・110 cm／3 歲・90 cm</p><p>Luge 優先・小火車・親子時光・聖誕候選</p></header>
+<header class="hero"><div class="snowfall" aria-hidden="true"><i style="--x:4%;--size:3px;--duration:7s;--delay:-0s"></i><i style="--x:33%;--size:4px;--duration:8s;--delay:-0.73s"></i><i style="--x:62%;--size:5px;--duration:9s;--delay:-1.46s"></i><i style="--x:91%;--size:6px;--duration:10s;--delay:-2.19s"></i><i style="--x:20%;--size:3px;--duration:11s;--delay:-2.92s"></i><i style="--x:49%;--size:4px;--duration:12s;--delay:-3.65s"></i><i style="--x:78%;--size:5px;--duration:7s;--delay:-4.38s"></i><i style="--x:7%;--size:6px;--duration:8s;--delay:-5.109999999999999s"></i><i style="--x:36%;--size:3px;--duration:9s;--delay:-5.84s"></i><i style="--x:65%;--size:4px;--duration:10s;--delay:-6.57s"></i><i style="--x:94%;--size:5px;--duration:11s;--delay:-7.3s"></i><i style="--x:23%;--size:6px;--duration:12s;--delay:-8.03s"></i><i style="--x:52%;--size:3px;--duration:7s;--delay:-8.76s"></i><i style="--x:81%;--size:4px;--duration:8s;--delay:-9.49s"></i><i style="--x:10%;--size:5px;--duration:9s;--delay:-10.219999999999999s"></i><i style="--x:39%;--size:6px;--duration:10s;--delay:-10.95s"></i></div><span class="festive-stars" aria-hidden="true">✦ ✧ ✦</span><div>BUSAN · 2026.12.24–12.28 · 4 NIGHTS</div><h1>釜山親子聖誕五日</h1><p>2 大 2 小｜5 歲・110 cm／3 歲・90 cm</p><p>Luge 優先・小火車・親子時光・聖誕候選</p><button class="motion-toggle" id="motion-toggle" type="button" aria-pressed="true">暫停動畫</button></header>
 <nav aria-label="主要導覽"><div><a href="#day-01">12/24</a><a href="#day-02">12/25</a><a href="#day-03">12/26</a><a href="#day-04">12/27</a><a href="#day-05">12/28</a><a href="#stay">住宿・備忘</a></div></nav>
 <main class="wrap">
 <p><span class="tag confirmed">日期・成員・機票已確認</span><span class="tag pending">飯店暫選・餐廳票券未訂</span></p>
@@ -110,4 +150,18 @@ window.addEventListener('hashchange',reveal);reveal();
 let printState;
 window.addEventListener('beforeprint',()=>{printState=days.map(d=>d.open);days.forEach(d=>d.open=true);});
 window.addEventListener('afterprint',()=>{if(printState)days.forEach((d,i)=>d.open=printState[i]);});
+
+const motionButton=document.getElementById('motion-toggle');
+const reducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)');
+let motionEnabled=!reducedMotion.matches;
+function updateMotion(){
+ document.body.classList.toggle('motion-off',!motionEnabled);
+ motionButton.setAttribute('aria-pressed',String(motionEnabled));
+ motionButton.textContent=motionEnabled?'暫停動畫':'開啟動畫';
+ if(reducedMotion.matches){motionEnabled=false;document.body.classList.add('motion-off');motionButton.setAttribute('aria-pressed','false');motionButton.disabled=true;motionButton.textContent='已依系統設定停用動畫';}
+ else motionButton.disabled=false;
+}
+motionButton.addEventListener('click',()=>{motionEnabled=!motionEnabled;updateMotion();});
+reducedMotion.addEventListener('change',()=>{motionEnabled=!reducedMotion.matches;updateMotion();});
+updateMotion();
 </script></body></html>
