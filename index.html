@@ -36,489 +36,91 @@ body{margin:0;background:#ffffff;font-family:'Noto Sans TC',sans-serif;-webkit-f
   .dtime{flex:0 0 66px;font-size:12px}
   .dtext{font-size:13px;line-height:1.7}
 }
+
+body{color:#25313d;line-height:1.75}
+.wrap{max-width:900px}.hero p{margin:6px 0}.hero h1{font-size:clamp(26px,5vw,36px);margin:8px 0}
+nav{position:sticky;top:0;background:#fff;border-bottom:1px solid #e2e8ed;z-index:2;overflow:auto}
+nav div{display:flex;gap:22px;max-width:900px;margin:auto;padding:12px 20px;white-space:nowrap}
+a{color:#28658b;text-underline-offset:3px}nav a{text-decoration:none;font-size:14px}
+section{scroll-margin-top:75px;margin-top:34px}h2{font-size:22px;border-bottom:2px solid #25313d;padding-bottom:8px}
+h3{font-size:18px;margin-bottom:8px}.tag{display:inline-block;padding:2px 9px;border-radius:6px;background:#e9f2f7;color:#285c79;font-size:14px;margin:2px}
+.pending{background:#fbf0d8;color:#805e20}.confirmed{background:#e6f3eb;color:#286342}
+.note,.warn{font-size:15px}.card,details{border:1px solid #dde5eb;border-radius:12px;padding:16px 20px;margin:12px 0;background:#fff}
+summary{cursor:pointer;font-weight:700;font-size:17px}summary small{display:block;font-weight:400;color:#61707f;font-size:14px;margin-top:4px}
+table{width:100%;border-collapse:collapse;font-size:15px}th,td{text-align:left;padding:12px 8px;border-bottom:1px solid #e4eaef;vertical-align:top}th{color:#285c79}td:first-child{width:100px}
+button{font:inherit;background:#e9f2f7;border:1px solid #b6cbd9;border-radius:8px;padding:7px 14px;color:#285c79;cursor:pointer}
+ul{padding-left:22px}li{margin:7px 0}.muted{color:#61707f;font-size:14px}footer{margin-top:36px;border-top:1px solid #dde5eb;padding-top:20px;font-size:14px;color:#61707f}
+@media(max-width:560px){.card,details{padding:14px 12px}td:first-child{width:74px}th,td{padding:10px 5px}table{font-size:14px}.hero{padding:30px 16px}}
+@media print{nav,button{display:none}.hero{background:white;color:#25313d}details{break-inside:avoid}}
 </style>
 </head>
 <body>
-<div style="min-height:100vh;background:#fff;color:#25313d" data-screen-label="流程總覽">
-
-  <!-- top nav -->
-  <div style="border-bottom:1px solid #edf1f4;background:#f8fafb;overflow-x:auto">
-    <div style="display:flex;gap:20px;padding:14px 20px;font-size:13px;white-space:nowrap;width:max-content;margin:0 auto">
-      <a href="#schedule" style="color:#25313d;font-weight:700;text-decoration:none">📋 五日總表</a>
-      <a href="#xmas" style="color:#8a97a4;text-decoration:none" class="hv1">🎄 聖誕</a>
-      <a href="#stay" style="color:#8a97a4;text-decoration:none" class="hv1">🏨 住宿</a>
-      <a href="#flights" style="color:#8a97a4;text-decoration:none" class="hv1">✈ 航班</a>
-      <a href="#tips" style="color:#8a97a4;text-decoration:none" class="hv1">💡 備忘</a>
-    </div>
-  </div>
-
-  <!-- hero -->
-  <div class="hero">
-    <div style="font-size:11px;letter-spacing:.26em;color:#9fb2c2;font-weight:500">BUSAN · 12/24 – 12/28 · 4 NIGHTS · 4 ADULTS + 4 KIDS</div>
-    <h1 style="font-size:clamp(26px,5vw,34px);font-weight:900;margin:12px 0 10px;line-height:1.3">🎄 釜山親子聖誕五日</h1>
-    <p style="font-size:13.5px;color:#b9c8d5;margin:0 0 4px;line-height:1.9">冬季版 · 西面單一據點 · 四晚不換飯店 · 幼兒 2/3/4/5 歲</p>
-    <p style="font-size:13.5px;color:#b9c8d5;margin:0;line-height:1.9">平安夜 → 聖誕節・南浦燈飾 → Osiria・Luge → 海雲台・Centum → 返台</p>
-    <div style="font-size:12px;color:#e8d3a3;margin-top:16px;background:rgba(255,255,255,.07);border-radius:10px;padding:9px 14px;display:inline-block">室內為主 · 每天保留午睡 · 日落約 17:20</div>
-  </div>
-
-  <div class="wrap">
-
-    <!-- quick nav -->
-    <div style="display:flex;gap:8px;flex-wrap:wrap">
-      <a href="#schedule" style="background:#f3f6f8;border:1px solid #e2e8ed;color:#61707f;font-size:12.5px;padding:5px 14px;border-radius:99px;text-decoration:none;white-space:nowrap" class="hv2">📋 總表</a>
-      <a href="#xmas" style="background:#f3f6f8;border:1px solid #e2e8ed;color:#61707f;font-size:12.5px;padding:5px 14px;border-radius:99px;text-decoration:none;white-space:nowrap" class="hv2">🎄 聖誕</a>
-      <a href="#stay" style="background:#f3f6f8;border:1px solid #e2e8ed;color:#61707f;font-size:12.5px;padding:5px 14px;border-radius:99px;text-decoration:none;white-space:nowrap" class="hv2">🏨 住宿</a>
-      <a href="#flights" style="background:#f3f6f8;border:1px solid #e2e8ed;color:#61707f;font-size:12.5px;padding:5px 14px;border-radius:99px;text-decoration:none;white-space:nowrap" class="hv2">✈ 航班</a>
-      <a href="#tips" style="background:#f3f6f8;border:1px solid #e2e8ed;color:#61707f;font-size:12.5px;padding:5px 14px;border-radius:99px;text-decoration:none;white-space:nowrap" class="hv2">💡 備忘</a>
-    </div>
-
-    <p class="warn">⚠ <strong>整趟都在尖峰</strong>：12/25 是韓國國定假日，12/26 週六、12/27 週日。景點、餐廳、交通全程人多。<strong>Luge、天空膠囊列車、平安夜與聖誕節晚餐，全部要提前訂</strong>，現場排隊帶四個幼兒不可行。</p>
-
-    <!-- schedule -->
-    <div id="schedule" style="scroll-margin-top:20px">
-      <div style="display:flex;align-items:baseline;gap:12px;margin:42px 0 4px">
-        <span style="font-size:38px;font-weight:900;color:#e4eaef;line-height:1">5</span>
-        <div style="font-size:16px;font-weight:900;color:#25313d">五日總表<span style="font-weight:500;color:#8a97a4;font-size:12.5px">（12/24–12/28）</span></div>
-      </div>
-      <div style="height:1px;background:#25313d;margin-bottom:4px"></div>
-      <div style="margin:14px 2px 2px;font-size:13px"><a href="#" id="togAllBtn" onclick="togAll(event)" style="color:#3d6b8f;text-decoration:none;font-weight:600" class="hv3">▾ 全部展開</a></div>
-
-        <!-- Day 01 -->
-        <div style="border-bottom:1px dashed #dde5eb">
-          <div onclick="tog('01')" class="dhead">
-          <div class="dnum">
-            <div style="font-size:28px;font-weight:900;color:#a3453c;line-height:1">01</div>
-            <div style="font-size:11px;color:#8a97a4;margin-top:5px;line-height:1.4">12/24 四</div>
-          </div>
-          <div style="flex:1;min-width:0">
-            <div style="font-size:15px;font-weight:700;color:#25313d;line-height:1.45">抵達釜山 → 入住西面 → 平安夜</div>
-            <div style="font-size:13px;color:#3d6b8f;margin-top:4px;line-height:1.65">✈ TPE → PUS（約 2h20）・🚐 包車直達・🎄 平安夜晚餐</div>
-            <div style="font-size:13px;color:#61707f;margin-top:3px">🏨 <a href="#stay" style="color:#3d6b8f;font-weight:600;text-decoration:none" class="hv3">西面飯店</a><span>（第 1 晚／共 4 晚不換房）</span></div>
-            <div style="font-size:12px;color:#8a97a4;margin-top:5px;line-height:1.75">主軸：不排戶外，落地就進室內；晚上包禮物</div>
-          </div>
-            <span id="ar-01" style="color:#c3ccd4;font-size:15px;flex-shrink:0;align-self:center">▸</span>
-          </div>
-          <div id="bd-01" class="dbody" style="display:none">
-            <div class="drow">
-            <div class="dtime">~06:30</div>
-            <div class="dtext">桃園機場報到。8 人團體＋4 位幼兒過安檢慢，<span class="k">提前 3h</span>；推車可推到登機門再托運。<span class="k">禮物放托運</span>，別讓小孩看到</div>
-          </div>
-            <div class="drow">
-            <div class="dtime">~09:00</div>
-            <div class="dtext">TPE → PUS 金海機場（約 2h20；韓國比台灣<span class="k">快 1 小時</span>）</div>
-          </div>
-            <div class="drow">
-            <div class="dtime">~12:30</div>
-            <div class="dtext">入境、領行李與推車；便利商店買 <span class="k">T-money／Cashbee</span>（大人各一張）。<span class="k">出關前先幫小孩加外套</span>，外面約 5–8°C</div>
-          </div>
-            <div class="drow">
-            <div class="dtime">~13:00</div>
-            <div class="dtext"><span class="k">包車直達西面</span>（約 40 分）。8 人＋行李＋2 台推車，一般計程車（4 人）與 Kakao T Venti（6 人）都不夠</div>
-          </div>
-            <div class="drow">
-            <div class="dtime">~14:00</div>
-            <div class="dtext">飯店寄放行李，<span class="k">當場確認兩間房是否相連</span>（不相連立刻請櫃檯調整，越早講越有機會）</div>
-          </div>
-            <div class="drow">
-            <div class="dtime">15:00</div>
-            <div class="dtext">check in 拿房、分裝行李、泡奶、換裝</div>
-          </div>
-            <div class="drow">
-            <div class="dtime">~16:00</div>
-            <div class="dtext"><span class="k">樂天百貨＋西面地下街</span>：與飯店同一區，<span class="k">幾乎不用走到戶外</span>。看聖誕布置、逛玩具樓層；<span class="k">Daiso 買包裝紙、緞帶、聖誕襪</span>，順便補幾樣小禮物</div>
-          </div>
-            <div class="drow">
-            <div class="dtime">~18:00</div>
-            <div class="dtext">🎄 <span class="k">平安夜晚餐</span>。⚠ 韓國的平安夜是全年最熱門的外食夜，<span class="k">8 人不訂位當晚很可能只能吃便利商店</span>——出發前務必訂好，並註明有四位幼兒、需要兒童餐具</div>
-          </div>
-            <div class="drow">
-            <div class="dtime">~20:30</div>
-            <div class="dtext">小孩睡著後：<span class="k">包禮物、放床尾或聖誕襪</span>。四份分清楚貼名字，免得早上搶錯</div>
-          </div>
-          </div>
-        </div>
-
-        <!-- Day 02 -->
-        <div style="border-bottom:1px dashed #dde5eb">
-          <div onclick="tog('02')" class="dhead">
-          <div class="dnum">
-            <div style="font-size:28px;font-weight:900;color:#3e8a5f;line-height:1">02</div>
-            <div style="font-size:11px;color:#8a97a4;margin-top:5px;line-height:1.4">12/25 五</div>
-          </div>
-          <div style="flex:1;min-width:0">
-            <div style="font-size:15px;font-weight:700;color:#25313d;line-height:1.45">聖誕節：拆禮物 → 室內親子 → 南浦燈飾</div>
-            <div style="font-size:13px;color:#3d6b8f;margin-top:4px;line-height:1.65">🎁 早上慢慢來・🎄 南浦洞聖誕樹文化節</div>
-            <div style="font-size:13px;color:#61707f;margin-top:3px">🏨 <a href="#stay" style="color:#3d6b8f;font-weight:600;text-decoration:none" class="hv3">西面飯店</a><span>（第 2 晚）</span></div>
-            <div style="font-size:12px;color:#8a97a4;margin-top:5px;line-height:1.75">主軸：韓國國定假日，不跟人擠景點，重心放在飯店與燈飾</div>
-          </div>
-            <span id="ar-02" style="color:#c3ccd4;font-size:15px;flex-shrink:0;align-self:center">▸</span>
-          </div>
-          <div id="bd-02" class="dbody" style="display:none">
-            <div class="drow">
-            <div class="dtime">~07:30</div>
-            <div class="dtext">🎁 <span class="k">拆禮物</span>。這是四個小孩整趟最期待的一刻，今天早上刻意不排任何行程，讓他們在房間玩到飽</div>
-          </div>
-            <div class="drow">
-            <div class="dtime">~09:30</div>
-            <div class="dtext">飯店早餐（兩家分批下去，避開尖峰）</div>
-          </div>
-            <div class="drow">
-            <div class="dtime">~11:00</div>
-            <div class="dtext">室內親子時段：百貨兒童樓層，或找一間 <span class="k">키즈카페（室內親子樂園）</span>——韓國到處都有、暖氣足、2–5 歲最好放電。Naver Map 搜 <span class="k">키즈카페</span> 找飯店附近的</div>
-          </div>
-            <div class="drow">
-            <div class="dtime">~12:30</div>
-            <div class="dtext">午餐（百貨美食街最省事，幼兒選擇多）</div>
-          </div>
-            <div class="drow">
-            <div class="dtime">~13:30</div>
-            <div class="dtext"><span class="k">回房午睡</span>。據點就在旁邊，回去的成本是零——這是選西面的主要理由之一</div>
-          </div>
-            <div class="drow">
-            <div class="dtime">~16:30</div>
-            <div class="dtext">地鐵 1 號線往南浦（<span class="k">約 15 分</span>）。四個小孩睡飽了再出門，晚上才撐得住</div>
-          </div>
-            <div class="drow">
-            <div class="dtime">~17:20</div>
-            <div class="dtext">🎄 <span class="k">南浦洞聖誕樹文化節</span>（광복로一帶）：釜山最大的聖誕燈飾，通常 11 月底點燈到 1 月初。冬天約 17:20 天黑，這個時間到剛好開燈</div>
-          </div>
-            <div class="drow">
-            <div class="dtime">~18:30</div>
-            <div class="dtext">南浦晚餐（BIFF 廣場黑糖餅、街頭小吃小孩會喜歡；正餐建議也先訂）</div>
-          </div>
-            <div class="drow">
-            <div class="dtime">~20:00</div>
-            <div class="dtext">地鐵回西面（約 15 分）。今天唯一的戶外行程只有燈飾這 1 小時，保暖裝備一定要帶齊</div>
-          </div>
-          </div>
-        </div>
-
-        <!-- Day 03 -->
-        <div style="border-bottom:1px dashed #dde5eb">
-          <div onclick="tog('03')" class="dhead">
-          <div class="dnum">
-            <div style="font-size:28px;font-weight:900;color:#3d6b8f;line-height:1">03</div>
-            <div style="font-size:11px;color:#8a97a4;margin-top:5px;line-height:1.4">12/26 六</div>
-          </div>
-          <div style="flex:1;min-width:0">
-            <div style="font-size:15px;font-weight:700;color:#25313d;line-height:1.45">Osiria 全日：海東龍宮寺 + Skyline Luge</div>
-            <div style="font-size:13px;color:#3d6b8f;margin-top:4px;line-height:1.65">🚐 包車全日・🛷 Luge 四組 1:1 同時下滑</div>
-            <div style="font-size:13px;color:#61707f;margin-top:3px">🏨 <a href="#stay" style="color:#3d6b8f;font-weight:600;text-decoration:none" class="hv3">西面飯店</a><span>（第 3 晚）</span></div>
-            <div style="font-size:12px;color:#8a97a4;margin-top:5px;line-height:1.75">主軸：本趟唯一的長車程日，也是最大重點</div>
-          </div>
-            <span id="ar-03" style="color:#c3ccd4;font-size:15px;flex-shrink:0;align-self:center">▸</span>
-          </div>
-          <div id="bd-03" class="dbody" style="display:none">
-            <div class="drow">
-            <div class="dtime">~08:00</div>
-            <div class="dtext">飯店早餐</div>
-          </div>
-            <div class="drow">
-            <div class="dtime">~08:45</div>
-            <div class="dtext">包車出發往機張 Osiria（<span class="k">約 60 分</span>）。這是住西面付出的代價，單程比住海雲台多約 30 分——但只有今天這一趟，車上正好補眠</div>
-          </div>
-            <div class="drow">
-            <div class="dtime">~10:00</div>
-            <div class="dtext"><span class="k">海東龍宮寺</span>：海岸岩壁寺廟、108 階。⚠ 階梯多、路窄人擠，<span class="k">推車留車上、改揹巾</span>，一位大人顧一位小孩。冬天海邊風極強，帽子圍脖戴好</div>
-          </div>
-            <div class="drow">
-            <div class="dtime">~11:30</div>
-            <div class="dtext">移動至 <span class="k">Skyline Luge 釜山</span>（同區，約 10 分）</div>
-          </div>
-            <div class="drow">
-            <div class="dtime">~12:00</div>
-            <div class="dtext">🛷 <span class="k">Skyline Luge</span>：纜椅上山＋滑道下滑。<span class="k">四位大人各帶一位小孩雙人共乘、四組同時出發</span>。先買 <span class="k">2 趟券</span>——第一趟多半在觀察和害怕，第二趟才開始笑。刻意排在中午，是一天裡最不冷的時段</div>
-          </div>
-            <div class="drow">
-            <div class="dtime">⚠ 身高</div>
-            <div class="dtext">共乘約需 <span class="k">85cm 以上</span>、單獨駕駛約 <span class="k">110cm 以上</span>（以釜山館官網為準）。<span class="k">2 歲那位卡在邊緣，出發前務必量</span>；沒過就留一位大人陪他在下方等，其餘三組照玩</div>
-          </div>
-            <div class="drow">
-            <div class="dtime">⚠ 冬天</div>
-            <div class="dtext">滑道全開放，<span class="k">雪衣、手套、毛帽、圍脖缺一不可</span>，纜椅上山那段最冷。<span class="k">遇雪或結冰會停駛</span>，前一晚先查官網或致電確認；停駛就改水族館，順序與 Day 4 對調</div>
-          </div>
-            <div class="drow">
-            <div class="dtime">~13:30</div>
-            <div class="dtext">午餐 Osiria 園區內（室內暖身）</div>
-          </div>
-            <div class="drow">
-            <div class="dtime">~14:30</div>
-            <div class="dtext">上車回程，<span class="k">車上午睡</span>（今天的午睡就靠這一段）</div>
-          </div>
-            <div class="drow">
-            <div class="dtime">~16:30</div>
-            <div class="dtext">〔候選〕順路停 <span class="k">廣安里</span>：<span class="k">週六通常有 M 無人機燈光秀</span>（場次見官網），沙灘看廣安大橋。⚠ 海邊晚上很冷，小孩撐不住就直接回飯店，不必勉強</div>
-          </div>
-            <div class="drow">
-            <div class="dtime">~18:30</div>
-            <div class="dtext">晚餐（西面周邊選擇多，今天累，就近解決）</div>
-          </div>
-          </div>
-        </div>
-
-        <!-- Day 04 -->
-        <div style="border-bottom:1px dashed #dde5eb">
-          <div onclick="tog('04')" class="dhead">
-          <div class="dnum">
-            <div style="font-size:28px;font-weight:900;color:#2b8a80;line-height:1">04</div>
-            <div style="font-size:11px;color:#8a97a4;margin-top:5px;line-height:1.4">12/27 日</div>
-          </div>
-          <div style="flex:1;min-width:0">
-            <div style="font-size:15px;font-weight:700;color:#25313d;line-height:1.45">東線室內日：水族館 → Centum City</div>
-            <div style="font-size:13px;color:#3d6b8f;margin-top:4px;line-height:1.65">🐠 SEA LIFE・🎄 新世界聖誕布置・🧸 玩具樓層</div>
-            <div style="font-size:13px;color:#61707f;margin-top:3px">🏨 <a href="#stay" style="color:#3d6b8f;font-weight:600;text-decoration:none" class="hv3">西面飯店</a><span>（第 4 晚）</span></div>
-            <div style="font-size:12px;color:#8a97a4;margin-top:5px;line-height:1.75">主軸：一路向外再往回收，全部室內；回程順路不繞路</div>
-          </div>
-            <span id="ar-04" style="color:#c3ccd4;font-size:15px;flex-shrink:0;align-self:center">▸</span>
-          </div>
-          <div id="bd-04" class="dbody" style="display:none">
-            <div class="drow">
-            <div class="dtime">~09:15</div>
-            <div class="dtext">地鐵 2 號線 西面 → 海雲台（約 30 分）</div>
-          </div>
-            <div class="drow">
-            <div class="dtime">~10:00</div>
-            <div class="dtext">🐠 <span class="k">SEA LIFE 釜山水族館</span>（海雲台沙灘旁）：全室內、暖氣足，2–5 歲接受度最高的景點。週日人多，建議<span class="k">線上先買票</span>、一開門就到</div>
-          </div>
-            <div class="drow">
-            <div class="dtime">~11:30</div>
-            <div class="dtext">海雲台海邊短散步。冬天的海很漂亮但<span class="k">風極強</span>，穿暖、拍照就好，<span class="k">不玩沙</span>；〔候選〕<span class="k">天空膠囊列車</span>（車廂封閉、冬天照開，一台限 4 人、兩家各一台，<span class="k">週日務必先訂</span>）</div>
-          </div>
-            <div class="drow">
-            <div class="dtime">~12:30</div>
-            <div class="dtext">午餐 海雲台（室內餐廳，先訂位）</div>
-          </div>
-            <div class="drow">
-            <div class="dtime">~14:00</div>
-            <div class="dtext">2 號線回程 2 站 → <span class="k">Centum City</span>（順路，不繞）。想睡的一批可先搭車回飯店午睡，兩家分工輪班——四個大人的好處就在這裡</div>
-          </div>
-            <div class="drow">
-            <div class="dtime">~14:30</div>
-            <div class="dtext">🎄 <span class="k">新世界 Centum City</span>：大型聖誕布置、兒童與玩具樓層、室內遊戲區；隔壁就是樂天百貨 Centum City，一次逛完。伴手禮也在這裡一起買掉</div>
-          </div>
-            <div class="drow">
-            <div class="dtime">~17:00</div>
-            <div class="dtext">回飯店休息（2 號線約 20 分）</div>
-          </div>
-            <div class="drow">
-            <div class="dtime">~18:30</div>
-            <div class="dtext">晚餐 西面（明天要飛，今晚早點收）</div>
-          </div>
-          </div>
-        </div>
-
-        <!-- Day 05 -->
-        <div style="border-bottom:1px dashed #dde5eb">
-          <div onclick="tog('05')" class="dhead">
-          <div class="dnum">
-            <div style="font-size:28px;font-weight:900;color:#6b5ca8;line-height:1">05</div>
-            <div style="font-size:11px;color:#8a97a4;margin-top:5px;line-height:1.4">12/28 一</div>
-          </div>
-          <div style="flex:1;min-width:0">
-            <div style="font-size:15px;font-weight:700;color:#25313d;line-height:1.45">西面採買 → 金海機場 → 返台</div>
-            <div style="font-size:13px;color:#3d6b8f;margin-top:4px;line-height:1.65">🛍 飯店樓下解決・🚐 包車 40 分到機場</div>
-            <div style="font-size:13px;color:#61707f;margin-top:3px">🏨 <span>—（返台）</span><span></span></div>
-            <div style="font-size:12px;color:#8a97a4;margin-top:5px;line-height:1.75">主軸：完全不移動，最後一個上午在飯店旁邊耗掉</div>
-          </div>
-            <span id="ar-05" style="color:#c3ccd4;font-size:15px;flex-shrink:0;align-self:center">▸</span>
-          </div>
-          <div id="bd-05" class="dbody" style="display:none">
-            <div class="drow">
-            <div class="dtime">~08:30</div>
-            <div class="dtext">飯店早餐、退房；行李與推車寄放櫃檯</div>
-          </div>
-            <div class="drow">
-            <div class="dtime">~09:30</div>
-            <div class="dtext"><span class="k">西面最後採買</span>：樂天百貨、西面地下街、Olive Young（面膜零食）、超市（香蕉牛奶、海苔、辛拉麵）。<span class="k">全在飯店步行範圍，不用拖行李移動</span>——這是最後一天住西面最大的好處</div>
-          </div>
-            <div class="drow">
-            <div class="dtime">~11:30</div>
-            <div class="dtext">回飯店取行李、換裝、上廁所（上車前一次解決）</div>
-          </div>
-            <div class="drow">
-            <div class="dtime">~12:00</div>
-            <div class="dtext">午餐 <span class="k">西面豬肉湯飯街</span>（돼지국밥 골목，釜山最後一碗，冬天喝湯剛好）</div>
-          </div>
-            <div class="drow">
-            <div class="dtime">~13:30</div>
-            <div class="dtext"><span class="k">包車 → 金海機場</span>（約 40 分，比住海雲台省 20–30 分）</div>
-          </div>
-            <div class="drow">
-            <div class="dtime">~14:30</div>
-            <div class="dtext">報到、辦 <span class="k">Tax Refund 退稅</span>（單筆 ₩15,000 以上；先海關蓋章再托運）</div>
-          </div>
-            <div class="drow">
-            <div class="dtime">~17:00</div>
-            <div class="dtext">PUS → TPE（約 2h30），返家</div>
-          </div>
-          </div>
-        </div>
-
-    </div>
-
-    <!-- xmas -->
-    <div id="xmas" style="scroll-margin-top:20px;margin-top:38px">
-      <div onclick="tog('xmas')" style="display:flex;align-items:baseline;gap:12px;margin:0 0 4px;cursor:pointer;user-select:none">
-        <span style="font-size:38px;font-weight:900;color:#e4eaef;line-height:1">🎄</span>
-        <div style="font-size:16px;font-weight:900;color:#25313d">聖誕節專區<span style="font-weight:500;color:#8a97a4;font-size:12.5px">（禮物・訂位・燈飾）</span></div>
-        <span style="margin-left:auto;font-size:13px;color:#8a97a4"><span id="ar-xmas">▸</span></span>
-      </div>
-      <div style="height:1px;background:#25313d;margin-bottom:12px"></div>
-      <div id="bd-xmas" style="display:none">
-      <div style="display:flex;flex-direction:column;gap:12px">
-        <div class="li"><span>🎁</span><p><span class="k">禮物從台灣帶去</span>。12/24 中午才落地、下午兩點才進房，當天要帶著四個小孩偷買偷藏根本做不到；韓國玩具也普遍比台灣貴。<span class="k">在台灣買好、拆掉外盒減體積、放托運</span>，選輕薄好帶的（貼紙書、小車、公仔、小盒積木）。</p></div>
-        <div class="li"><span>🛍</span><p><span class="k">包裝到當地買</span>：Daiso 有包裝紙、緞帶、禮物袋、聖誕襪，全部 ₩1,000–5,000。Day 1 下午在西面地下街一次買齊，晚上小孩睡了再包。四份<span class="k">貼上名字</span>，免得早上搶錯。</p></div>
-        <div class="li"><span>🧸</span><p><span class="k">想在當地買玩具</span>：最近的集中地是 <span class="k">Centum City</span>（新世界＋樂天百貨，兒童玩具樓層），已排在 Day 4。量販店的大型玩具連鎖 <span class="k">토이킹덤（Toy Kingdom）</span>、<span class="k">토이저러스（Toys"R"Us）</span>品項多、價格比百貨合理；分店位置請用 Naver Map 搜最新的。小東西直接靠 <span class="k">다이소（Daiso）</span>，₩1,000 起跳，四個小孩一人挑幾樣也不心疼。</p></div>
-        <div class="li"><span>🍽</span><p><span class="k">平安夜與聖誕節晚餐一定要訂</span>。韓國的 12/24 是全年最熱門的外食夜，12/25 又是國定假日。<span class="k">8 人不訂位，當晚很可能只能吃便利商店</span>——出發前就訂，並註明四位幼兒、需要兒童餐具與兒童椅（韓國餐廳兒童椅不普遍）。</p></div>
-        <div class="li"><span>🏨</span><p><span class="k">問飯店兩件事</span>：能不能<span class="k">代收或代藏禮物</span>、有沒有<span class="k">聖誕節的兒童活動或聖誕老人</span>。12 月的大飯店多半會辦，反正你們本來就要寫信爭取相連房，順便一起問。</p></div>
-        <div class="li"><span>🎄</span><p><span class="k">南浦洞聖誕樹文化節</span>（부산크리스마스트리문화축제，광복로一帶）：釜山最大的聖誕燈飾，通常 11 月底點燈到 1 月初。已排在 <span class="k">Day 2（12/25）傍晚</span>，從西面搭 1 號線只要 15 分——這是把據點放在西面的直接紅利。實際展期與活動內容出發前查官網。</p></div>
-        <div class="li"><span>✨</span><p>其他順路的聖誕氣氛：<span class="k">新世界 Centum City</span> 的大型布置（Day 4 會經過）、西面樂天百貨（飯店樓下，Day 1 就看得到）。</p></div>
-      </div>
-      </div>
-    </div>
-
-    <!-- stay -->
-    <div id="stay" style="scroll-margin-top:20px;margin-top:30px">
-      <div onclick="tog('stay')" style="display:flex;align-items:baseline;gap:12px;margin:0 0 4px;cursor:pointer;user-select:none">
-        <span style="font-size:38px;font-weight:900;color:#e4eaef;line-height:1">🏨</span>
-        <div style="font-size:16px;font-weight:900;color:#25313d">住宿<span style="font-weight:500;color:#8a97a4;font-size:12.5px">（西面 4 晚・不換房）</span></div>
-        <span style="margin-left:auto;font-size:13px;color:#8a97a4"><span id="ar-stay">▸</span></span>
-      </div>
-      <div style="height:1px;background:#25313d;margin-bottom:12px"></div>
-      <div id="bd-stay" style="display:none">
-      <div style="display:flex;flex-direction:column;gap:12px">
-        <div class="li"><span>❄</span><p><span class="k">為什麼從海雲台改到西面</span>：原本選海雲台是為了沙灘和泳池，但 12 月底約 1–10°C、海風很強，沙灘玩不了、戶外泳池不開——海邊的價值幾乎歸零。冬天真正值錢的是<span class="k">「不用走到戶外」</span>，而西面是 1／2 號線交會點，百貨與地下街連成一片，這正是它的強項。</p></div>
-        <div class="li"><span>📍</span><p><span class="k">車程</span>：南浦（聖誕燈飾）15 分、Centum City 20 分、海雲台 30 分、<span class="k">金海機場 40 分</span>。只有 Osiria（Luge）要 60 分，比住海雲台多 30 分——但那天本來就包車，且只有一趟。其餘四天全部變近。</p></div>
-        <div class="li"><span>⭐</span><p><span class="k">首選 Lotte Hotel Busan（西面）</span>：與樂天百貨釜山本店同一個複合體，<span class="k">從房間到百貨、超市、美食街幾乎不必走到街上</span>，帶四個幼兒在冬天，這一點勝過海景。訂房時確認室內連通動線。<br>其他方向：<span class="k">Centum City 一帶</span>（緊鄰新世界，室內機能同樣強、人潮比西面少）。</p></div>
-        <div class="li"><span>🌊</span><p><span class="k">如果還是想住海邊</span>：<span class="k">Paradise Hotel Busan</span> 有室內溫泉水療設施，冬天泡湯看海是另一種玩法，但幼兒可入場的區域有限制，要先問清楚；且南浦與機場都會變遠。</p></div>
-        <div class="li"><span>🛏</span><p><span class="k">房型：一家一間（2 大 2 幼）</span>，幼童多可與父母同床、不另計人數，不必訂超大套房。</p></div>
-        <div class="li"><span>🚪</span><p><span class="k">一定要爭取相連房（connecting rooms）</span>或同層相鄰：兩家可輪流顧小孩，晚上把四個小孩集中一間、另一間讓大人喘口氣。訂房時<span class="k">寫信要求並取得書面確認</span>，不能只是「盡量安排」。</p></div>
-        <div class="li"><span>✅</span><p><span class="k">訂房前務必確認</span>：單房可否 2 大 2 幼／相連房能否保證／<span class="k">室內泳池是否開放與幼兒可否入池</span>（冬季常維修，官網不會寫）／嬰兒床兩間各一／浴缸。</p></div>
-      </div>
-      </div>
-    </div>
-
-    <!-- flights -->
-    <div id="flights" style="scroll-margin-top:20px">
-      <div onclick="tgF()" style="display:flex;align-items:baseline;gap:12px;margin:38px 0 4px;cursor:pointer;user-select:none">
-        <span style="font-size:38px;font-weight:900;color:#e4eaef;line-height:1">✈</span>
-        <div style="font-size:16px;font-weight:900;color:#25313d">航班<span style="font-weight:500;color:#8a97a4;font-size:12.5px">（TPE ⇄ PUS 直飛，開票後填入）</span></div>
-        <span style="margin-left:auto;font-size:12px;color:#8a97a4;white-space:nowrap"><span id="fHint">點開看時刻</span> <span id="fArrow">▸</span></span>
-      </div>
-      <div style="height:1px;background:#25313d;margin-bottom:4px"></div>
-      <div id="fBody" style="display:none">
-        <div>
-
-            <div style="display:flex;gap:14px;padding:13px 0;border-bottom:1px dashed #dde5eb">
-              <span style="font-size:11.5px;font-weight:700;color:#3d6b8f;background:#e8f0f6;padding:2px 9px;border-radius:6px;flex-shrink:0;margin-top:2px;height:fit-content">去程</span>
-              <div style="flex:1">
-                <div style="font-size:14px;font-weight:700;color:#25313d;line-height:1.55">12/24（四）：TPE 上午 → PUS 中午前後（約 2h20）</div>
-                <div style="font-size:12.5px;color:#8a97a4">當天就是平安夜，選上午班機才來得及晚餐</div>
-              </div>
-            </div>
-
-            <div style="display:flex;gap:14px;padding:13px 0;border-bottom:1px dashed #dde5eb">
-              <span style="font-size:11.5px;font-weight:700;color:#6b5ca8;background:#eeeaf8;padding:2px 9px;border-radius:6px;flex-shrink:0;margin-top:2px;height:fit-content">回程</span>
-              <div style="flex:1">
-                <div style="font-size:14px;font-weight:700;color:#25313d;line-height:1.55">12/28（一）：PUS 傍晚 → TPE 晚間（約 2h30）</div>
-                <div style="font-size:12.5px;color:#8a97a4">傍晚班機才有完整的最後一個上午；別選早班機</div>
-              </div>
-            </div>
-
-          <p class="note">👨‍👩‍👧‍👦 <strong>8 人一起訂位</strong>：同一訂單才好劃相鄰座位，四組親子建議分兩排前後坐。⚠ <strong>滿 2 歲的孩子在國際線通常必須佔位購票</strong>，四位都要各自持護照、各佔一個位子，訂票時先跟航空公司確認；兒童餐要在開票後另外預訂。<br>⚠ <strong>聖誕連假是旺季</strong>，12/24 去程與 12/28 回程都很搶手，8 個位子要盡早開票。<br>TPE–PUS 直飛選擇多（華航、長榮、星宇、台灣虎航、釜山航空、濟州航空等）；實際航班號與時刻開票後回填此處。</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- tips -->
-    <div id="tips" style="scroll-margin-top:20px;margin-top:30px">
-      <div onclick="tog('tips')" style="display:flex;align-items:baseline;gap:12px;margin:0 0 4px;cursor:pointer;user-select:none">
-        <span style="font-size:38px;font-weight:900;color:#e4eaef;line-height:1">💡</span>
-        <div style="font-size:16px;font-weight:900;color:#25313d">冬季親子備忘</div>
-      <span style="margin-left:auto;font-size:13px;color:#8a97a4"><span id="ar-tips">▸</span></span>
-      </div>
-      <div style="height:1px;background:#25313d;margin-bottom:12px"></div>
-      <div id="bd-tips" style="display:none">
-      <div style="display:flex;flex-direction:column;gap:12px">
-        <div class="li"><span>🌡</span><p><span class="k">天氣</span>：12 月底釜山約 <span class="k">1–10°C</span>，很少下雪但<span class="k">海邊風極強</span>，體感低很多。室內暖氣普遍很強，<span class="k">洋蔥式穿搭、好穿脫</span>最重要。</p></div>
-        <div class="li"><span>🌇</span><p><span class="k">天黑得早</span>：日落約 <span class="k">17:20</span>。戶外行程集中在 <span class="k">10:00–16:30</span>，之後全部安排室內或燈飾。</p></div>
-        <div class="li"><span>👥</span><p><span class="k">全程尖峰</span>：12/25 國定假日、12/26–27 週末。<span class="k">Luge、天空膠囊列車、水族館、餐廳全部提前線上訂</span>；熱門景點一開門就到，午後人潮翻倍。</p></div>
-        <div class="li"><span>🚐</span><p><span class="k">包車</span>：8 人＋行李＋2 台推車，一般計程車（4 人）、Kakao T Venti（6 人）都裝不下。<span class="k">機場往返＋Day 3 Osiria</span> 建議包 11–12 人座廂型車，並<span class="k">預約兒童安全座椅</span>。其餘天數西面出發搭地鐵即可（南浦 15 分、Centum 20 分、海雲台 30 分）。</p></div>
-        <div class="li"><span>👶</span><p><span class="k">推車 vs 揹巾</span>：地下街、百貨、水族館推車好推；<span class="k">海東龍宮寺一定要揹巾</span>，推車留車上。冬天記得加<span class="k">推車防風罩與腳套</span>。</p></div>
-        <div class="li"><span>📏</span><p><span class="k">身高門檻先量好</span>：Luge 共乘約 85cm＋、單獨駕駛約 110cm＋。出發前量四個小孩身高、拍照存檔（實際規定以官網為準）。</p></div>
-        <div class="li"><span>🎟</span><p><span class="k">幼兒票</span>：韓國多數景點 36 個月以下免費、地鐵幼兒免費，但常需出示證件——<span class="k">四本護照隨身帶</span>。</p></div>
-        <div class="li"><span>🍚</span><p><span class="k">吃飯</span>：冬天首選湯類（豬肉湯飯、雪濃湯、刀削麵），幼兒好入口又暖身。辣的多，先問「안 맵게（不辣）」。<span class="k">兒童椅少見</span>，訂位時先講。</p></div>
-        <div class="li"><span>📱</span><p><span class="k">必備 App</span>：Naver Map／Kakao Map（Google Maps 在韓國導航不準）、Kakao T、Papago。兩家各備一支有網路的手機。</p></div>
-        <div class="li"><span>💳</span><p><span class="k">錢</span>：T-money／Cashbee 大人各一張；南浦洞、西面換錢所匯率優於機場。單筆滿 ₩15,000 可退稅。</p></div>
-        <div class="li"><span>📋</span><p><span class="k">證件</span>：台灣護照免簽 90 天，<span class="k">幼兒也須各自持護照</span>；K-ETA 對台灣暫時免除（<span class="k">出發前務必再確認</span>）。可先線上填電子入境卡。</p></div>
-        <div class="li"><span>🚨</span><p><span class="k">緊急</span>：112 警察／119 消防救護／1330 觀光翻譯熱線（有中文）。四個小孩建議戴<span class="k">防走失手環</span>，寫上大人手機號碼。</p></div>
-      </div>
-      </div>
-    </div>
-
-    <!-- pack -->
-    <div id="pack" style="scroll-margin-top:20px;margin-top:30px">
-      <div onclick="tog('pack')" style="display:flex;align-items:baseline;gap:12px;margin:0 0 4px;cursor:pointer;user-select:none">
-        <span style="font-size:38px;font-weight:900;color:#e4eaef;line-height:1">🧳</span>
-        <div style="font-size:16px;font-weight:900;color:#25313d">冬季打包重點</div>
-      <span style="margin-left:auto;font-size:13px;color:#8a97a4"><span id="ar-pack">▸</span></span>
-      </div>
-      <div style="height:1px;background:#25313d;margin-bottom:12px"></div>
-      <div id="bd-pack" style="display:none">
-      <div style="display:flex;flex-direction:column;gap:12px">
-        <div class="li"><span>🧥</span><p><span class="k">保暖四件組 ×4</span>：羽絨或鋪棉外套、發熱衣、毛帽、手套、圍脖。Luge 那天要全副武裝，纜椅上山最冷。</p></div>
-        <div class="li"><span>🔥</span><p><span class="k">暖暖包</span>（貼式最好用）、保溫瓶裝熱水；室內暖氣強，<span class="k">中層要好脫</span>，不然小孩會悶出汗再著涼。</p></div>
-        <div class="li"><span>🧴</span><p>韓國冬天非常乾：<span class="k">保濕乳液、護唇膏、鼻腔用生理食鹽水</span>；飯店房間可要求加濕器。</p></div>
-        <div class="li"><span>👶</span><p>輕便推車 ×2（加<span class="k">防風罩、腳套</span>）、揹巾 ×2、防走失手環 ×4、安撫小物（認床用）。</p></div>
-        <div class="li"><span>💊</span><p>兒童常備藥、退燒藥與退熱貼、體溫計、健保卡影本、<span class="k">旅平險含醫療</span>（四個幼兒務必保）。冬天是流感季，口罩多帶。</p></div>
-        <div class="li"><span>👕</span><p>小孩換洗衣物<span class="k">帶平常的兩倍</span>（吃飯打翻、室內出汗）；飯店有洗衣服務或投幣洗衣可先問。</p></div>
-        <div class="li"><span>🎁</span><p><span class="k">聖誕禮物</span>（拆盒減體積、放托運）；包裝材料到 Daiso 買就好，不用從台灣帶。</p></div>
-        <div class="li"><span>🔌</span><p>220V 圓孔轉接頭（Type C/F）多帶幾個、行動電源（<span class="k">低溫掉電快</span>）、<span class="k">平板＋離線影片</span>（長車程與等餐救命）。</p></div>
-      </div>
-      </div>
-    </div>
-
-    <!-- indoor backup -->
-    <div id="rain" style="scroll-margin-top:20px;margin-top:30px">
-      <div onclick="tog('rain')" style="display:flex;align-items:baseline;gap:12px;margin:0 0 4px;cursor:pointer;user-select:none">
-        <span style="font-size:38px;font-weight:900;color:#e4eaef;line-height:1">🏠</span>
-        <div style="font-size:16px;font-weight:900;color:#3d6b8f">太冷／下雨備案</div>
-      <span style="margin-left:auto;font-size:13px;color:#8a97a4"><span id="ar-rain">▸</span></span>
-      </div>
-      <div style="height:1px;background:#25313d;margin-bottom:12px"></div>
-      <div id="bd-rain" style="display:none">
-      <div style="display:flex;flex-direction:column;gap:12px">
-        <div class="li"><span>🛷</span><p><span class="k">Luge（Day 3）最需要備案</span>：<span class="k">遇雪或結冰會停駛</span>，前一晚先查官網或致電。停駛就與 Day 4 對調，改去水族館與 Centum City——<span class="k">四晚都住同一間，順序可以隨天氣自由重排</span>，這是單一據點最大的好處。</p></div>
-        <div class="li"><span>🧸</span><p><span class="k">키즈카페（室內親子樂園）</span>：韓國到處都有、暖氣足、2–5 歲最好放電，下雨或太冷的萬用解。Naver Map 搜 <span class="k">키즈카페</span>。</p></div>
-        <div class="li"><span>🛍</span><p><span class="k">西面地下街＋樂天百貨</span>：就在飯店旁，完全不必走到戶外，可以耗掉一整個下午還順便買完伴手禮。</p></div>
-        <div class="li"><span>🎄</span><p><span class="k">新世界 Centum City</span>：全室內、聖誕布置大、有兒童與玩具樓層和室內遊戲區。⚠ <span class="k">Spa Land 汗蒸幕有年齡限制，幼兒無法入場</span>，別排。</p></div>
-        <div class="li"><span>🐠</span><p><span class="k">SEA LIFE 釜山水族館</span>：全室內，這年齡最穩的備案（已排在 Day 4）。</p></div>
-        <div class="li"><span>🚢</span><p><span class="k">國立海洋博物館</span>（影島）：室內、有兒童體驗區，可搭配南浦那天使用。</p></div>
-        <div class="li"><span>🏊</span><p><span class="k">飯店室內泳池</span>：最省力的選擇，什麼都不用移動（訂房時先確認開放與幼兒入池規定）。</p></div>
-      </div>
-      </div>
-    </div>
-
-    <!-- footer -->
-    <div style="text-align:center;font-size:12px;color:#a8b3bd;margin-top:44px;padding-top:20px;border-top:1px solid #edf1f4;line-height:2">
-      行程版本：Busan Family Christmas 2026／12.24–12.28（4 大 + 4 幼・西面單一據點・冬季版）<br>
-      票價、時刻、身高規定、燈飾展期與開放時間，出發前請以官方平台再次確認
-    </div>
-
-  </div>
-</div>
+<header class="hero"><div>BUSAN · 2026.12.24–12.28 · 4 NIGHTS</div><h1>釜山親子聖誕五日</h1><p>2 大 2 小｜5 歲・110 cm／3 歲・90 cm</p><p>Luge 優先・小火車・親子時光・聖誕候選</p></header>
+<nav aria-label="主要導覽"><div><a href="#schedule">每日行程</a><a href="#stay">住宿與泳池</a><a href="#flights">航班</a><a href="#transport">交通</a><a href="#xmas">聖誕活動</a><a href="#todo">行前待辦</a><a href="#sources">查證來源</a></div></nav>
+<main class="wrap">
+<p><span class="tag confirmed">日期、成員、機票已確認</span> <span class="tag pending">飯店暫選・尚未訂房</span> <span class="tag pending">交通與景點票券待安排</span></p>
+<p class="note">目前共識：Paradise Hotel Busan 四晚作為住宿方案；每日保留休息。聖誕市集待 2026 年公告，Luge 與小火車日期可視天候互換。</p>
+<section id="schedule"><h2>五日行程</h2><p class="muted">三個完整遊玩日；除航班外，時段為規劃用途，尚未代表完成預約。</p><button id="toggle-days" type="button">全部展開</button><details class="day" id="day-01" open><summary>12/24（四）｜抵達釜山<small>JX902 → 海雲台飯店 → 晚餐休息</small></summary><table><tbody><tr><th scope="row">14:50</th><td>JX902 桃園 TPE 起飛。機票已訂；行李、座位及兒童餐依訂單確認。</td></tr><tr><th scope="row">17:55</th><td>抵達金海 PUS，入境並領取行李與推車。所有航班時間均為當地時間，韓國比台灣快 1 小時。</td></tr><tr><th scope="row">抵達後</th><td>預約接送直達 Paradise Hotel Busan（飯店暫定、未訂）。接送尚未預約，需確認兩張適齡安全座椅及行李容量。</td></tr><tr><th scope="row">晚上</th><td>入住、附近或飯店用餐、休息。依入境及路況彈性安排，不趕市集、不排景點。</td></tr></tbody></table></details>
+<details class="day" id="day-02" ><summary>12/25（五）｜聖誕氣氛與親子時光<small>室內親子活動 → 市集候選 → 晚餐</small></summary><table><tbody><tr><th scope="row">上午</th><td>早餐、飯店室內 Kids Village／HABA 遊戲區。HABA 適合學齡前孩子，由家長陪同；實際時段及使用權益待訂房確認。</td></tr><tr><th scope="row">中午</th><td>午餐與午睡，保留孩子下午外出的體力。</td></tr><tr><th scope="row">下午</th><td>優先保留電影殿堂 Christmas Village Busan，2026 年場次尚未確認。若舉辦，提早逛攤位、看燈後轉室內晚餐。</td></tr><tr><th scope="row">替代</th><td>若市集未舉辦或天候不佳，改 SEA LIFE 水族館／室內親子活動。海雲台燈飾僅順路短逛，2026 年展期也待公告。</td></tr></tbody></table></details>
+<details class="day" id="day-03" ><summary>12/26（六）｜Luge 重點日<small>兩組親子共乘 → 機張午餐 → 回飯店</small></summary><table><tbody><tr><th scope="row">上午</th><td>前往 Skyline Luge Busan。開門時間及營運狀態出發前確認；遊玩、排隊與換裝先保留半天。</td></tr><tr><th scope="row">共乘</th><td>5 歲／110 公分與 3 歲／90 公分，規劃一位大人各帶一位孩子。5 歲尚未達單獨駕駛年齡；現場量身高及工作人員判定為準。票券未購。</td></tr><tr><th scope="row">中午</th><td>機張附近室內午餐、暖身。龍宮寺僅列順路候選，依體力決定，不預設一定造訪。</td></tr><tr><th scope="row">下午</th><td>回飯店午睡、室內遊戲，或視天候使用一般戶外溫水泳池。Cimer 戶外兒童區冬季關閉。</td></tr><tr><th scope="row">備案</th><td>強風、大雨或雷電可能影響營運；必要時與 12/27 互換。若兩日均不適合，改室內活動。</td></tr></tbody></table></details>
+<details class="day" id="day-04" ><summary>12/27（日）｜小火車與伴手禮<small>海岸列車優先 → 天空膠囊候選 → 主要採買</small></summary><table><tbody><tr><th scope="row">上午</th><td>海雲台 Beach Train 海岸列車為主要活動，路線涵蓋尾浦至松亭。依飯店動線和票種挑站點，不必全程逐站下車。</td></tr><tr><th scope="row">選配</th><td>可搭配尾浦—青沙浦單程 Sky Capsule 天空膠囊（每車四人、單程約 30 分鐘）。班次、方向與票種尚未選定，兩項都未訂票。</td></tr><tr><th scope="row">中午</th><td>沿途或海雲台午餐，保留午睡與回飯店休息時間。</td></tr><tr><th scope="row">下午</th><td>主要伴手禮採買：零食、餅乾、海苔等。店家待確認；晚上整理並放入托運行李。</td></tr><tr><th scope="row">彈性</th><td>水族館作冷天／雨天備案；國立釜山科學館為其他親子候選。不把所有候選塞進同一天。</td></tr></tbody></table></details>
+<details class="day" id="day-05" ><summary>12/28（一）｜短暫補買與返台<small>早餐 → 視時間補買 → 金海機場</small></summary><table><tbody><tr><th scope="row">早上</th><td>早餐、整理行李。僅在附近有已營業商店且時間充足時，留 20–30 分鐘補買；店家與營業時間待查。</td></tr><tr><th scope="row">出發</th><td>飯店出發時間依交通方式與路況倒推。若補買會壓縮機場時間，取消補買。</td></tr><tr><th scope="row">09:30</th><td>暫定抵達金海機場目標，保留報到、托運及通關時間；依航空公司要求調整。</td></tr><tr><th scope="row">12:30</th><td>JX901 金海 PUS 起飛。機票已訂。</td></tr><tr><th scope="row">14:15</th><td>抵達桃園 TPE。</td></tr></tbody></table></details></section>
+<section id="stay"><h2>暫定住宿｜Paradise Hotel Busan</h2><p><span class="tag pending">12/24 入住・12/28 退房・4 晚未訂</span></p><p>海雲台單一據點、不換飯店。房型需正式接受 2 大 2 小入住，床型、早餐及兩位孩子的設施權益一併確認。</p>
+<div class="warn"><strong>Cimer Kids Zone 戶外兒童區：官網明示冬季及雨天關閉。</strong>它與室內 Kids Village／HABA 遊戲區不同。一般戶外溫水池可作天候允許時的選項，不保證每天適合玩水。</div>
+<table><thead><tr><th>設施</th><th>目前官網資訊</th></tr></thead><tbody>
+<tr><th>Ocean Spa Pool</th><td>戶外溫水泳池，官網介紹冬季可使用。08:00–11:10、11:30–14:40、15:00–18:10、18:30–21:50。</td></tr>
+<tr><th>Cimer 主區</th><td>戶外溫泉主區，目前公布上述四時段；未標示整區冬季關閉。</td></tr>
+<tr><th>Cimer Kids Zone</th><td><strong>冬季關閉，不列入本趟可用設施。</strong></td></tr>
+<tr><th>HABA 室內遊戲區</th><td>學齡前孩子由家長陪同使用。現行 10:00–19:00，13:00–14:00 午休；住客每晚一次，依實際方案與公告確認。</td></tr>
+<tr><th>BMW 兒童駕駛</th><td>2026 年適用 2019–2021 年出生者，需預約。僅作較大孩子的候選，不是兩位都能參加。</td></tr>
+</tbody></table>
+<p class="note">休館一般規則：每月第四個星期三；2026/12 對應 12/23，按一般規則不與住宿日期重疊。<strong>12/24–28 專屬營運、維修安排及幼兒使用規則仍須向飯店確認。</strong>現在列出的時段並非 12 月保證時刻表。</p>
+<p class="muted">訂房需確認：空房與床型、2 大 2 小入住上限、早餐、泳池／Cimer 費用與入場次數、孩子救生衣規定、浴缸、取消條款。</p></section>
+<section id="flights"><h2>已訂航班</h2><div class="card"><span class="tag confirmed">去程 12/24（四）</span><h3>JX902｜14:50 TPE → 17:55 PUS</h3><p>下午出發、傍晚抵達。當晚僅入住及晚餐。</p></div><div class="card"><span class="tag confirmed">回程 12/28（一）</span><h3>JX901｜12:30 PUS → 14:15 TPE</h3><p>暫以 09:30 抵達機場為目標，回程早上不排大型採買。</p></div><p class="muted">航班由旅客提供並確認已訂，皆為當地時間。出發前核對航空公司最新時刻、航廈、行李與報到規定。</p></section>
+<section id="transport"><h2>交通｜便利優先，方式待定</h2><table><tbody>
+<tr><th>機場往返</th><td>預約接送為優先方案；確認兩張適齡安全座椅、推車及行李容量。尚未預約。</td></tr>
+<tr><th>Luge 日</th><td>比較半日／一日預約車及自駕。實際安排以景點數、可否放推車、提早回飯店的彈性決定。</td></tr>
+<tr><th>海雲台日</th><td>步行、短程叫車或地鐵；一般臨時叫車不預設備有兒童座椅。</td></tr>
+<tr><th>自駕</th><td>不排斥，尚未決定租車。比較取還車、停車、兒童座椅與整體門到門時間，再決定是否需要全程租車。</td></tr>
+</tbody></table></section>
+<section id="xmas"><h2>聖誕活動｜今年公告待確認</h2><p class="warn">以下展期均為<strong>上一季歷史資料</strong>，不能當作 2026 年 12 月已確認活動。</p><table><thead><tr><th>候選</th><th>上季紀錄與本次安排</th></tr></thead><tbody>
+<tr><th>電影殿堂聖誕村</th><td>Christmas Village Busan：2025/11/27–12/25，含禮物、手作與餐飲市集。先保留 12/25；今年是否舉辦、日期、活動及票務均待公告。</td></tr>
+<tr><th>海雲台光之慶典</th><td>上季 2025/11/29–2026/1/18，以燈飾為主。若今年舉辦，安排晚餐前後短逛，非必去。</td></tr>
+<tr><th>光復路燈樹節</th><td>上季 2025/12/5–2026/2/22。南浦跨區候選，暫不為它單獨拉一趟行程。</td></tr>
+</tbody></table><p>若今年市集仍於 12/25 結束，優先保留該日。若未舉辦，改室內親子活動，不影響 Luge 與小火車主軸。</p></section>
+<section id="todo"><h2>行前待辦與親子備忘</h2><ul>
+<li>訂 Paradise 四晚住宿，取得 2 大 2 小入住與設施權益確認。</li>
+<li>確認 12 月泳池及 Cimer 營運；不安排冬季關閉的戶外兒童區。</li>
+<li>決定交通，預約兒童座椅與機場接送；若自駕，另核對租車證件需求。</li>
+<li>確認 2026 聖誕市集公告，再鎖定 12/25 行程。</li>
+<li>購買 Luge 票券；親子共乘票的趟數須與成人票一致。兩位孩子現場量身高為準。</li>
+<li>選海岸列車／天空膠囊的班次、方向、票種；查推車攜帶規則。</li>
+<li>安排主要伴手禮店家於 12/27；12/28 僅補買，需查早上營業時間。</li>
+<li>預備防風保暖外套、帽子、手套、圍脖與推車保暖用品，出發前查看實際氣象。</li>
+</ul><p class="note">釜山 12 月氣候平均最高約 10.4°C、最低約 2°C，並非當日預報。海邊風大時縮短戶外停留，市集以白天至入夜短逛為主。</p>
+<p>室內備案：SEA LIFE 水族館、飯店 HABA 遊戲區、國立釜山科學館。水族館透明底船有 100 公分身高門檻，90 公分孩子不能搭，不列為全家體驗。</p></section>
+<section id="sources"><h2>官方查證來源</h2><p class="muted">設施與活動資料查核：2026/10/06。後續公告可能調整，訂房及出發前再次確認。</p><ul>
+<li><a href="https://www.busanparadisehotel.co.kr/front/facility/spaparapool?language=EN">Paradise 戶外溫水泳池：時段與休館規則</a></li>
+<li><a href="https://www.busanparadisehotel.co.kr/front/facility/spaparacimer?language=EN">Paradise Cimer：兒童區冬季關閉</a></li>
+<li><a href="https://www.busanparadisehotel.co.kr/front/facility/kidsList?F_CATE3=KIDS_LOUNGE">Paradise HABA 室內遊戲區</a></li>
+<li><a href="https://www.busanparadisehotel.co.kr/front/facility/kidsList?language=EN">Paradise BMW 兒童活動資格</a></li>
+<li><a href="https://busan.skylineluge.kr/en/visiting-us/faqs/">Skyline Luge：共乘、身高與天候規定</a></li>
+<li><a href="https://www.bluelinepark.com/chn/skyCapsuleCourse.do">海雲台 Blueline Park 官方路線</a></li>
+<li><a href="https://www.visitbusan.net/zht/index.do?lang_cd=cnb&amp;menuCd=DOM_000000602002001000&amp;uc_seq=2617">Visit Busan：上一季聖誕活動紀錄</a></li>
+<li><a href="https://english.visitkorea.or.kr/svc/contents/infoBscView.do?vcontsId=140636">韓國觀光公社：氣候平均資料</a></li>
+<li><a href="https://www.visitsealife.com/busan/en/what-s-inside/experiences/glass-bottom-boat/">SEA LIFE：透明底船身高限制</a></li>
+</ul></section>
+<footer>釜山親子旅行・更新 2026/10/06<br>日期與航班已確認；住宿暫定，交通、票券及 2026 聖誕活動尚未確認。未展示訂位代碼或個人證件資料。</footer>
+</main>
 <script>
-function tgF(){
-  var b=document.getElementById('fBody'),open=b.style.display!=='none';
-  b.style.display=open?'none':'block';
-  document.getElementById('fArrow').textContent=open?'▸':'▾';
-  document.getElementById('fHint').textContent=open?'點開看時刻':'收合';
-}
-var DAYS=["01","02","03","04","05"];
-function tog(id){var b=document.getElementById('bd-'+id);if(!b)return;var o=b.style.display!=='none';b.style.display=o?'none':'block';var a=document.getElementById('ar-'+id);if(a)a.textContent=o?'▸':'▾';syncAll();}
-function syncAll(){var all=DAYS.every(function(d){return document.getElementById('bd-'+d).style.display!=='none';});var t=document.getElementById('togAllBtn');if(t)t.textContent=all?'▴ 全部收合':'▾ 全部展開';}
-function togAll(e){e.preventDefault();var all=DAYS.every(function(d){return document.getElementById('bd-'+d).style.display!=='none';});DAYS.forEach(function(d){var b=document.getElementById('bd-'+d);b.style.display=all?'none':'block';var a=document.getElementById('ar-'+d);if(a)a.textContent=all?'▸':'▾';});syncAll();}
-if(location.hash==='#flights')tgF();
-</script>
-</body>
-</html>
+const days = [...document.querySelectorAll('details.day')];
+const toggle = document.getElementById('toggle-days');
+function sync(){toggle.textContent=days.every(d=>d.open)?'全部收合':'全部展開';}
+toggle.addEventListener('click',()=>{const open=!days.every(d=>d.open);days.forEach(d=>d.open=open);sync();});
+days.forEach(d=>d.addEventListener('toggle',sync));
+function reveal(){const el=document.getElementById(location.hash.slice(1));if(el?.tagName==='DETAILS')el.open=true;}
+window.addEventListener('hashchange',reveal);reveal();
+let printState;
+window.addEventListener('beforeprint',()=>{printState=days.map(d=>d.open);days.forEach(d=>d.open=true);});
+window.addEventListener('afterprint',()=>{if(printState)days.forEach((d,i)=>d.open=printState[i]);});
+</script></body></html>
